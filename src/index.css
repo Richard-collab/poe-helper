@@ -396,7 +396,7 @@
     color: var(--gold);
   }
 
-  /* ---------- recommended builds modal ---------- */
+  /* ---------- recommended builds ---------- */
   .nav-button {
     @apply bg-transparent border-0 cursor-pointer;
     color: #fff;
@@ -425,9 +425,9 @@
   }
 
   .modal-backdrop {
-    @apply fixed inset-0 z-[200] flex items-center justify-center p-4;
-    background: rgba(12, 11, 10, 0.85);
-    backdrop-filter: blur(6px);
+    @apply fixed inset-0 z-[200] p-0 flex items-stretch justify-stretch;
+    background: rgba(12, 11, 10, 0.92);
+    backdrop-filter: blur(8px);
     animation: modalFadeIn 0.3s ease;
   }
 
@@ -436,127 +436,138 @@
     to { opacity: 1; }
   }
 
-  .modal-panel {
-    @apply w-full max-w-[720px] max-h-[85vh] flex flex-col relative overflow-hidden;
+  .guide-panel {
+    @apply flex w-full h-full overflow-hidden;
     background: var(--bg);
-    border: 1px solid rgba(161, 127, 84, 0.38);
-    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(252, 199, 54, 0.06);
-    animation: modalSlideUp 0.35s cubic-bezier(0.2, 0.6, 0.2, 1);
   }
 
-  @keyframes modalSlideUp {
-    from {
-      opacity: 0;
-      transform: translateY(40px) scale(0.98);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0) scale(1);
-    }
+  .guide-sidebar {
+    @apply hidden md:flex flex-col w-[260px] lg:w-[300px] shrink-0;
+    background: var(--bg-deep);
+    border-right: 1px solid rgba(161, 127, 84, 0.28);
+    padding: 28px;
   }
 
-  .modal-header {
-    @apply flex items-start justify-between gap-4 px-7 py-6 border-b;
-    border-color: rgba(161, 127, 84, 0.28);
+  .guide-sidebar .brand {
+    font-family: 'Cinzel', 'Noto Serif SC', serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    color: var(--gold-pale);
+    text-decoration: none;
+    margin-bottom: 46px;
+    display: inline-block;
   }
 
-  .modal-header h2 {
-    font-family: 'Noto Serif SC', serif;
-    font-weight: 900;
-    font-size: clamp(22px, 3vw, 28px);
-    letter-spacing: 0.08em;
-    color: var(--text);
+  .guide-sidebar .brand:hover {
+    color: var(--gold);
   }
 
-  .modal-header p {
-    @apply mt-1.5 text-xs;
-    color: var(--text-dim);
-    max-width: 40ch;
+  .guide-nav {
+    @apply flex flex-col gap-1 flex-1;
   }
 
-  .modal-close {
-    @apply w-10 h-10 flex items-center justify-center cursor-pointer;
-    color: var(--text-dim);
+  .guide-nav button {
+    @apply text-left px-4 py-3 cursor-pointer text-sm;
     background: transparent;
+    border: 1px solid transparent;
+    color: var(--text-dim);
+    letter-spacing: 0.04em;
+    transition: color 0.25s, border-color 0.25s, background 0.25s;
+  }
+
+  .guide-nav button:hover,
+  .guide-nav button.active {
+    color: var(--gold);
+    background: rgba(252, 199, 54, 0.06);
+    border-color: rgba(252, 199, 54, 0.25);
+  }
+
+  .guide-external {
+    @apply mt-auto inline-flex items-center gap-2 text-[11px] uppercase no-underline px-4 py-3;
+    color: var(--gold-pale);
+    border: 1px solid rgba(161, 127, 84, 0.35);
+    letter-spacing: 0.1em;
+    transition: color 0.25s, border-color 0.25s, background 0.25s;
+  }
+
+  .guide-external:hover {
+    color: var(--gold);
+    border-color: var(--gold);
+    background: rgba(252, 199, 54, 0.08);
+  }
+
+  .guide-external svg {
+    @apply w-3.5 h-3.5;
+    stroke: currentColor;
+  }
+
+  .guide-content {
+    @apply relative flex-1 overflow-y-auto px-6 py-10 md:px-12 md:py-12;
+  }
+
+  .guide-close {
+    @apply fixed top-5 right-5 md:absolute md:top-8 md:right-8 w-10 h-10 flex items-center justify-center cursor-pointer z-10;
+    color: var(--text-dim);
+    background: var(--bg);
     border: 1px solid rgba(161, 127, 84, 0.28);
     font-size: 22px;
     line-height: 1;
     transition: color 0.25s, border-color 0.25s, background 0.25s;
   }
 
-  .modal-close:hover {
+  .guide-close:hover {
     color: var(--gold);
     border-color: var(--gold);
     background: rgba(252, 199, 54, 0.08);
   }
 
-  .modal-body {
-    @apply overflow-y-auto px-7 py-6;
+  .guide-hero {
+    @apply pb-10 mb-10 border-b;
+    border-color: rgba(161, 127, 84, 0.28);
   }
 
-  .build-card {
-    @apply mb-5 p-5 relative;
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(161, 127, 84, 0.2);
-    transition: border-color 0.3s, background 0.3s;
-  }
-
-  .build-card:hover {
-    border-color: rgba(161, 127, 84, 0.45);
-    background: rgba(255, 255, 255, 0.035);
-  }
-
-  .build-card:last-child {
-    @apply mb-0;
-  }
-
-  .build-card-header {
-    @apply flex items-start justify-between gap-4 mb-3;
-  }
-
-  .build-name {
+  .guide-hero h1 {
     font-family: 'Noto Serif SC', serif;
-    font-weight: 600;
-    font-size: 18px;
-    letter-spacing: 0.04em;
+    font-weight: 900;
+    font-size: clamp(30px, 4vw, 44px);
+    letter-spacing: 0.06em;
+    line-height: 1.2;
     color: var(--text);
+    margin-top: 16px;
   }
 
-  .build-meta {
-    @apply mt-1 text-xs;
+  .guide-subtitle {
+    @apply mt-2 text-sm uppercase;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.2em;
     color: var(--bronze);
-    letter-spacing: 0.04em;
   }
 
-  .build-toggle {
-    @apply w-8 h-8 flex items-center justify-center cursor-pointer shrink-0;
-    color: var(--gold);
-    background: rgba(252, 199, 54, 0.08);
-    border: 1px solid rgba(252, 199, 54, 0.25);
-    font-size: 18px;
-    line-height: 1;
-    transition: background 0.25s, border-color 0.25s;
+  .guide-meta {
+    @apply mt-4 text-sm;
+    color: var(--gold-pale);
   }
 
-  .build-toggle:hover {
-    background: rgba(252, 199, 54, 0.15);
-    border-color: rgba(252, 199, 54, 0.45);
+  .guide-summary {
+    @apply mt-5 text-[15px] max-w-3xl leading-relaxed;
+    color: var(--text-dim);
   }
 
-  .build-tags {
-    @apply flex flex-wrap gap-2 mb-3;
+  .guide-tags {
+    @apply flex flex-wrap gap-2;
   }
 
-  .build-tag {
-    @apply text-[10px] uppercase px-2 py-1;
+  .guide-tag {
+    @apply text-[10px] uppercase px-2.5 py-1;
     color: var(--gold-pale);
     background: rgba(252, 199, 54, 0.08);
     border: 1px solid rgba(252, 199, 54, 0.18);
     letter-spacing: 0.12em;
   }
 
-  .build-pill {
-    @apply text-[10px] px-2 py-1;
+  .guide-pill {
+    @apply text-[10px] px-2.5 py-1;
     letter-spacing: 0.08em;
     border: 1px solid rgba(255, 255, 255, 0.12);
   }
@@ -597,72 +608,209 @@
     background: rgba(232, 165, 152, 0.08);
   }
 
-  .build-summary {
-    @apply text-[13.5px] leading-relaxed;
-    color: var(--text-dim);
+  .guide-section {
+    @apply mb-12;
   }
 
-  .build-details {
-    @apply grid gap-4 mt-4 pt-4;
-    border-top: 1px solid rgba(161, 127, 84, 0.2);
+  .guide-section h2 {
+    font-family: 'Noto Serif SC', serif;
+    font-weight: 900;
+    font-size: 22px;
+    letter-spacing: 0.08em;
+    color: var(--text);
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(161, 127, 84, 0.2);
   }
 
-  @media (min-width: 640px) {
-    .build-details {
-      @apply grid-cols-2;
-    }
-  }
-
-  .build-detail-block h4 {
-    @apply text-xs uppercase mb-2;
+  .guide-section h3 {
     font-family: 'Cinzel', serif;
-    letter-spacing: 0.24em;
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
     color: var(--bronze);
+    margin-bottom: 10px;
   }
 
-  .build-detail-block ul {
-    @apply list-disc pl-4 space-y-1;
-  }
-
-  .build-detail-block li {
-    @apply text-[13px];
+  .guide-body p {
+    @apply text-[14px] leading-relaxed mb-4;
     color: var(--text-dim);
   }
 
-  .build-links {
-    @apply flex flex-wrap gap-3 mt-4;
+  .guide-body p:last-child {
+    @apply mb-0;
   }
 
-  .build-link {
-    @apply inline-flex items-center gap-2 text-xs uppercase no-underline px-3 py-1.5;
-    color: var(--gold-pale);
-    border: 1px solid rgba(161, 127, 84, 0.35);
-    letter-spacing: 0.1em;
-    transition: color 0.25s, border-color 0.25s, background 0.25s;
+  .guide-pros-cons {
+    @apply grid gap-6 md:grid-cols-2;
   }
 
-  .build-link:hover {
+  .guide-pros-cons ul {
+    @apply list-disc pl-5 space-y-2;
+  }
+
+  .guide-pros-cons li {
+    @apply text-[14px];
+    color: var(--text-dim);
+  }
+
+  .guide-table-wrap {
+    @apply overflow-x-auto;
+  }
+
+  .guide-table {
+    @apply w-full text-left border-collapse;
+  }
+
+  .guide-table th {
+    @apply text-[11px] uppercase px-4 py-3;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.18em;
+    color: var(--bronze);
+    border-bottom: 1px solid rgba(161, 127, 84, 0.35);
+    background: rgba(255, 255, 255, 0.02);
+  }
+
+  .guide-table td {
+    @apply text-[13px] px-4 py-3;
+    color: var(--text-dim);
+    border-bottom: 1px solid rgba(161, 127, 84, 0.15);
+    vertical-align: top;
+  }
+
+  .guide-table tr:hover td {
+    background: rgba(255, 255, 255, 0.02);
+  }
+
+  .guide-skills {
+    @apply grid gap-4 md:grid-cols-2;
+  }
+
+  .skill-card {
+    @apply p-4;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(161, 127, 84, 0.2);
+  }
+
+  .skill-card h3 {
+    @apply mb-3;
+  }
+
+  .skill-gems {
+    @apply flex flex-wrap gap-2 mb-3;
+  }
+
+  .skill-gem {
+    @apply text-[11px] px-2 py-1;
     color: var(--gold);
-    border-color: var(--gold);
     background: rgba(252, 199, 54, 0.08);
+    border: 1px solid rgba(252, 199, 54, 0.18);
   }
 
-  .build-link svg {
-    @apply w-3.5 h-3.5;
-    stroke: currentColor;
+  .skill-card p {
+    @apply text-[12px] leading-relaxed;
+    color: var(--text-dim);
+  }
+
+  .guide-tree {
+    @apply grid gap-6 md:grid-cols-2;
+  }
+
+  .guide-tree ol {
+    @apply list-decimal pl-5 space-y-2;
+  }
+
+  .guide-tree li {
+    @apply text-[14px];
+    color: var(--text-dim);
+  }
+
+  .guide-tree p {
+    @apply text-[14px] leading-relaxed;
+    color: var(--text-dim);
+  }
+
+  .guide-tree strong {
+    color: var(--gold-pale);
+    font-weight: 500;
+  }
+
+  .guide-placeholder {
+    @apply text-xs p-3 break-all;
+    color: var(--text-dim);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px dashed rgba(161, 127, 84, 0.25);
+  }
+
+  .guide-timeline {
+    @apply relative pl-6 space-y-6;
+  }
+
+  .guide-timeline::before {
+    content: '';
+    @apply absolute left-[5px] top-2 bottom-2 w-px;
+    background: rgba(161, 127, 84, 0.3);
+  }
+
+  .timeline-item {
+    @apply relative;
+  }
+
+  .timeline-dot {
+    @apply absolute -left-6 top-1.5 w-2.5 h-2.5 rounded-full;
+    background: var(--gold);
+    box-shadow: 0 0 0 4px rgba(252, 199, 54, 0.1);
+  }
+
+  .timeline-item h3 {
+    @apply mb-1;
+    color: var(--text);
+  }
+
+  .timeline-item p {
+    @apply text-[13px] leading-relaxed;
+    color: var(--text-dim);
+  }
+
+  .guide-footer {
+    @apply mt-16 pt-8 border-t;
+    border-color: rgba(161, 127, 84, 0.28);
+  }
+
+  .guide-footer p {
+    @apply text-xs leading-relaxed;
+    color: var(--text-dim);
+  }
+
+  .guide-footer a {
+    color: var(--gold-pale);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .guide-footer a:hover {
+    color: var(--gold);
   }
 
   @media (max-width: 720px) {
-    .modal-header {
-      @apply px-5 py-4;
-    }
-
-    .modal-body {
-      @apply px-5 py-4;
-    }
-
     .nav-button {
       @apply hidden;
+    }
+
+    .guide-content {
+      @apply px-5 py-8;
+    }
+
+    .guide-hero {
+      @apply pb-8 mb-8;
+    }
+
+    .guide-table-wrap {
+      @apply -mx-5;
+    }
+
+    .guide-table {
+      @apply min-w-[600px];
     }
   }
 }
