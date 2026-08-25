@@ -8,7 +8,7 @@
 - 交易与经济：官方交易市集、Awakened PoE Trade、Poedb 编年史、Wealthy Exile
 - BD 流派：Path of Building、pob.cool、pobb.in、poe.ninja 天梯
 - 推荐 BD：本地镜像 Maxroll Winter Orb Elementalist 开荒指南
-- 本赛季 META：镜像 poe.ninja Allflame 赛季升华 / 装备 / 技能使用率
+- 本赛季 META：每天自动从 poe.ninja Allflame 赛季抓取升华 / 装备 / 技能使用率（GitHub Actions 定时任务）
 - 视觉复刻自 `example.html`：暗色金铜主题、粒子余烬背景、滚动渐显动画
 
 ## 开发
@@ -30,6 +30,16 @@ bun run build
 ```
 
 构建产物输出到 `dist/` 目录，可直接部署到 GitHub Pages / Cloudflare Pages / Vercel 等静态托管平台。
+
+## 更新本赛季 META 数据
+
+META 数据来自 poe.ninja 的私有 builds search API（protobuf + NDIC 字典）。仓库每天北京时间 08:00 自动抓取。
+
+手动更新：
+
+```bash
+bun run update-meta
+```
 
 ## 部署到 Vercel
 
