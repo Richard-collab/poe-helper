@@ -10,6 +10,7 @@
   --sienna: #8c4a2e;
   --text: #f0ebe6;
   --text-dim: #a89e94;
+  --font-sans: 'Noto Sans SC', -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
 }
 
 @layer base {
@@ -26,7 +27,7 @@
   body {
     background: var(--bg);
     color: var(--text);
-    font-family: 'Noto Sans SC', -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    font-family: var(--font-sans);
     font-weight: 300;
     line-height: 1.7;
     -webkit-font-smoothing: antialiased;
@@ -48,7 +49,7 @@
   }
 
   .app-header .brand {
-    font-family: 'Cinzel', 'Noto Serif SC', serif;
+    font-family: var(--font-sans);
     font-weight: 700;
     font-size: 15px;
     letter-spacing: 0.22em;
@@ -134,7 +135,7 @@
   }
 
   .hero-title {
-    font-family: 'Noto Serif SC', 'Cinzel', serif;
+    font-family: var(--font-sans);
     font-weight: 900;
     font-size: clamp(44px, 8.5vw, 108px);
     line-height: 1.12;
@@ -150,7 +151,7 @@
 
   .hero-sub {
     @apply mt-7 uppercase;
-    font-family: 'Cinzel', 'Noto Serif SC', serif;
+    font-family: var(--font-sans);
     font-size: clamp(12px, 1.4vw, 15px);
     letter-spacing: 0.34em;
     color: var(--gold-pale);
@@ -210,14 +211,14 @@
 
   .block-label .no {
     @apply block mb-3.5;
-    font-family: 'Cinzel', serif;
+    font-family: var(--font-sans);
     font-size: 13px;
     letter-spacing: 0.3em;
     color: var(--sienna);
   }
 
   .block-label h2 {
-    font-family: 'Noto Serif SC', serif;
+    font-family: var(--font-sans);
     font-weight: 900;
     font-size: clamp(26px, 3vw, 38px);
     letter-spacing: 0.08em;
@@ -227,7 +228,7 @@
 
   .block-label .en {
     @apply mt-2.5 uppercase;
-    font-family: 'Cinzel', serif;
+    font-family: var(--font-sans);
     font-size: 11px;
     letter-spacing: 0.42em;
     color: var(--bronze);
@@ -286,7 +287,7 @@
   }
 
   .row .idx {
-    font-family: 'Cinzel', serif;
+    font-family: var(--font-sans);
     font-size: 13px;
     letter-spacing: 0.15em;
     color: var(--sienna);
@@ -294,7 +295,7 @@
   }
 
   .row .name {
-    font-family: 'Noto Serif SC', serif;
+    font-family: var(--font-sans);
     font-weight: 600;
     font-size: clamp(17px, 1.7vw, 21px);
     letter-spacing: 0.04em;
@@ -303,7 +304,7 @@
 
   .row .name small {
     @apply block mt-[3px] uppercase;
-    font-family: 'Cinzel', serif;
+    font-family: var(--font-sans);
     font-weight: 400;
     font-size: 10.5px;
     letter-spacing: 0.24em;
@@ -373,7 +374,7 @@
   }
 
   .app-footer .f-brand {
-    font-family: 'Cinzel', 'Noto Serif SC', serif;
+    font-family: var(--font-sans);
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.24em;
@@ -449,7 +450,7 @@
   }
 
   .guide-sidebar .brand {
-    font-family: 'Cinzel', 'Noto Serif SC', serif;
+    font-family: var(--font-sans);
     font-weight: 700;
     font-size: 13px;
     letter-spacing: 0.18em;
@@ -534,7 +535,7 @@
 
   .guide-category {
     @apply inline-block text-[11px] uppercase px-3 py-1;
-    font-family: 'Cinzel', serif;
+    font-family: var(--font-sans);
     letter-spacing: 0.24em;
     color: var(--gold);
     background: rgba(252, 199, 54, 0.1);
@@ -542,7 +543,7 @@
   }
 
   .guide-hero h1 {
-    font-family: 'Noto Serif SC', serif;
+    font-family: var(--font-sans);
     font-weight: 900;
     font-size: clamp(32px, 5vw, 54px);
     letter-spacing: 0.05em;
@@ -554,7 +555,7 @@
 
   .guide-meta-row {
     @apply mt-5 flex flex-wrap items-center gap-3 text-xs uppercase;
-    font-family: 'Cinzel', serif;
+    font-family: var(--font-sans);
     letter-spacing: 0.14em;
     color: var(--gold-pale);
   }
@@ -565,7 +566,7 @@
 
   .guide-author {
     @apply text-xs uppercase;
-    font-family: 'Cinzel', serif;
+    font-family: var(--font-sans);
     letter-spacing: 0.16em;
     color: var(--text);
   }
@@ -589,7 +590,7 @@
 
   .guide-subtitle {
     @apply mt-2 text-sm uppercase;
-    font-family: 'Cinzel', serif;
+    font-family: var(--font-sans);
     letter-spacing: 0.2em;
     color: var(--bronze);
   }
@@ -663,7 +664,7 @@
   }
 
   .guide-section h2 {
-    font-family: 'Noto Serif SC', serif;
+    font-family: var(--font-sans);
     font-weight: 900;
     font-size: 22px;
     letter-spacing: 0.08em;
@@ -674,7 +675,7 @@
   }
 
   .guide-section h3 {
-    font-family: 'Cinzel', serif;
+    font-family: var(--font-sans);
     font-size: 13px;
     letter-spacing: 0.18em;
     text-transform: uppercase;
@@ -714,7 +715,7 @@
 
   .guide-table th {
     @apply text-[11px] uppercase px-4 py-3;
-    font-family: 'Cinzel', serif;
+    font-family: var(--font-sans);
     letter-spacing: 0.18em;
     color: var(--bronze);
     border-bottom: 1px solid rgba(161, 127, 84, 0.35);
@@ -868,7 +869,7 @@
 
   .profile-tabs button {
     @apply px-4 py-2 text-xs uppercase cursor-pointer;
-    font-family: 'Cinzel', serif;
+    font-family: var(--font-sans);
     letter-spacing: 0.12em;
     color: var(--text-dim);
     background: transparent;
@@ -902,7 +903,7 @@
 
   .skill-slot {
     @apply block text-[10px] uppercase mb-3;
-    font-family: 'Cinzel', serif;
+    font-family: var(--font-sans);
     letter-spacing: 0.16em;
     color: var(--bronze);
   }
@@ -977,7 +978,7 @@
 
   .meta-label {
     @apply inline-block text-[11px] uppercase px-3 py-1;
-    font-family: 'Cinzel', serif;
+    font-family: var(--font-sans);
     letter-spacing: 0.24em;
     color: var(--gold);
     background: rgba(252, 199, 54, 0.1);
@@ -985,7 +986,7 @@
   }
 
   .meta-hero h1 {
-    font-family: 'Noto Serif SC', serif;
+    font-family: var(--font-sans);
     font-weight: 900;
     font-size: clamp(32px, 5vw, 54px);
     letter-spacing: 0.05em;
@@ -1001,7 +1002,7 @@
 
   .meta-sub {
     @apply mt-5 text-xs uppercase;
-    font-family: 'Cinzel', serif;
+    font-family: var(--font-sans);
     letter-spacing: 0.14em;
     color: var(--gold-pale);
   }
@@ -1032,7 +1033,7 @@
   }
 
   .meta-section h2 {
-    font-family: 'Noto Serif SC', serif;
+    font-family: var(--font-sans);
     font-weight: 900;
     font-size: 18px;
     letter-spacing: 0.08em;
@@ -1052,7 +1053,7 @@
 
   .meta-table th {
     @apply text-[10px] uppercase px-3 py-2.5;
-    font-family: 'Cinzel', serif;
+    font-family: var(--font-sans);
     letter-spacing: 0.16em;
     color: var(--bronze);
     border-bottom: 1px solid rgba(161, 127, 84, 0.35);
