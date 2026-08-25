@@ -32,3 +32,14 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 # Finder (MacOS) folder config
 .DS_Store
+
+# reverse-engineering / scraping artifacts
+poe-ninja-*
+search-*.bin
+index-state.json
+dumps.json
+*.mjs
+!src/**/*.mjs
+*.html
+!src/**/*.html
+!example.html

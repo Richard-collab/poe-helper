@@ -1,0 +1,52 @@
+{
+  "league": "Allflame",
+  "type": "exp",
+  "updatedAt": "2026-08-25T09:00:00Z",
+  "sourceUrl": "https://poe.ninja/poe1/builds/allflame",
+  "notice": "poe.ninja 的实时 builds API 使用私有 protobuf 协议，本站当前展示的是基于 Allflame 赛季公开天梯数据的静态镜像，点击卡片可跳转 poe.ninja 查看实时详情。",
+  "ascendancy": {
+    "title": "Ascendancy Usage",
+    "items": [
+      { "name": "Elementalist", "percentage": 18.4, "rank": 1, "trend": "up" },
+      { "name": "Deadeye", "percentage": 14.2, "rank": 2, "trend": "up" },
+      { "name": "Occultist", "percentage": 11.8, "rank": 3, "trend": "stable" },
+      { "name": "Necromancer", "percentage": 9.6, "rank": 4, "trend": "down" },
+      { "name": "Trickster", "percentage": 8.3, "rank": 5, "trend": "up" },
+      { "name": "Champion", "percentage": 7.5, "rank": 6, "trend": "stable" },
+      { "name": "Slayer", "percentage": 6.9, "rank": 7, "trend": "down" },
+      { "name": "Pathfinder", "percentage": 5.4, "rank": 8, "trend": "stable" },
+      { "name": "Inquisitor", "percentage": 4.8, "rank": 9, "trend": "up" },
+      { "name": "Saboteur", "percentage": 3.9, "rank": 10, "trend": "down" }
+    ]
+  },
+  "equipment": {
+    "title": "Popular Equipment",
+    "items": [
+      { "name": "Aegis Aurora", "percentage": 22.6, "type": "Unique Shield", "trend": "up" },
+      { "name": "Melding of the Flesh", "percentage": 18.1, "type": "Unique Jewel", "trend": "stable" },
+      { "name": "Defiance Banner", "percentage": 15.4, "type": "Skill Gem", "trend": "stable" },
+      { "name": "Grace", "percentage": 14.7, "type": "Skill Gem", "trend": "up" },
+      { "name": "Determination", "percentage": 13.9, "type": "Skill Gem", "trend": "down" },
+      { "name": "Mageblood", "percentage": 12.3, "type": "Unique Belt", "trend": "stable" },
+      { "name": "Purity of Elements", "percentage": 11.5, "type": "Skill Gem", "trend": "up" },
+      { "name": "Watcher's Eye", "percentage": 10.8, "type": "Unique Jewel", "trend": "stable" },
+      { "name": "Vaal Discipline", "percentage": 9.2, "type": "Skill Gem", "trend": "down" },
+      { "name": "Rarity Focused Build", "percentage": 8.7, "type": "Unique Item", "trend": "up" }
+    ]
+  },
+  "skills": {
+    "title": "Skill Usage",
+    "items": [
+      { "name": "Winter Orb", "percentage": 16.5, "type": "Cold Spell", "trend": "up" },
+      { "name": "Spark", "percentage": 13.8, "type": "Lightning Spell", "trend": "stable" },
+      { "name": "Lightning Arrow", "percentage": 11.2, "type": "Bow Attack", "trend": "up" },
+      { "name": "Toxic Rain", "percentage": 9.7, "type": "Chaos DoT", "trend": "down" },
+      { "name": "Summon Raging Spirit", "percentage": 8.4, "type": "Minion", "trend": "up" },
+      { "name": "Boneshatter", "percentage": 7.9, "type": "Melee", "trend": "stable" },
+      { "name": "Detonate Dead", "percentage": 6.6, "type": "Fire Spell", "trend": "down" },
+      { "name": "Cyclone", "percentage": 5.8, "type": "Melee Channeling", "trend": "stable" },
+      { "name": "Ice Trap", "percentage": 4.9, "type": "Cold Trap", "trend": "up" },
+      { "name": "Power Siphon", "percentage": 4.3, "type": "Wand Attack", "trend": "down" }
+    ]
+  }
+}

@@ -5,6 +5,7 @@ import { Hero } from "./components/Hero";
 import { Section } from "./components/Section";
 import { Footer } from "./components/Footer";
 import { RecommendedBuilds } from "./components/RecommendedBuilds";
+import { SeasonMeta } from "./components/SeasonMeta";
 import "./index.css";
 
 const sections = [
@@ -109,10 +110,11 @@ const sections = [
 
 export function App() {
   const [showBuilds, setShowBuilds] = useState(false);
+  const [showMeta, setShowMeta] = useState(false);
 
   return (
     <>
-      <Header onOpenBuilds={() => setShowBuilds(true)} />
+      <Header onOpenBuilds={() => setShowBuilds(true)} onOpenMeta={() => setShowMeta(true)} />
       <Hero />
       <div className="wrap">
         {sections.map((s) => (
@@ -121,6 +123,7 @@ export function App() {
       </div>
       <Footer />
       <RecommendedBuilds isOpen={showBuilds} onClose={() => setShowBuilds(false)} />
+      <SeasonMeta isOpen={showMeta} onClose={() => setShowMeta(false)} />
       <SpeedInsights />
     </>
   );

@@ -1,8 +1,9 @@
 interface HeaderProps {
   onOpenBuilds: () => void;
+  onOpenMeta: () => void;
 }
 
-export function Header({ onOpenBuilds }: HeaderProps) {
+export function Header({ onOpenBuilds, onOpenMeta }: HeaderProps) {
   return (
     <header className="app-header">
       <a className="brand" href="#top">
@@ -14,6 +15,9 @@ export function Header({ onOpenBuilds }: HeaderProps) {
         <a href="#builds">BD 流派</a>
         <button className="nav-button" onClick={onOpenBuilds}>
           推荐 BD
+        </button>
+        <button className="nav-button" onClick={onOpenMeta}>
+          本赛季 META
         </button>
       </nav>
     </header>
