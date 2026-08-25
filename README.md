@@ -5,8 +5,10 @@
 ## 功能
 
 - 新手起步：游戏下载、中文化补丁
-- 交易与经济：官方交易市集、Awakened PoE Trade、Poedb 编年史
+- 交易与经济：官方交易市集、Awakened PoE Trade、Poedb 编年史、Wealthy Exile
 - BD 流派：Path of Building、pob.cool、pobb.in、poe.ninja 天梯
+- 推荐 BD：本地镜像 Maxroll Winter Orb Elementalist 开荒指南
+- 本赛季 META：镜像 poe.ninja Allflame 赛季升华 / 装备 / 技能使用率
 - 视觉复刻自 `example.html`：暗色金铜主题、粒子余烬背景、滚动渐显动画
 
 ## 开发
@@ -28,6 +30,13 @@ bun run build
 ```
 
 构建产物输出到 `dist/` 目录，可直接部署到 GitHub Pages / Cloudflare Pages / Vercel 等静态托管平台。
+
+## 部署到 Vercel
+
+1. 在 [Vercel Dashboard](https://vercel.com/dashboard) 导入本仓库。
+2. Framework Preset 选择 **Other**，Build Command 留空或填写 `bun run build`，Output Directory 填写 `dist`。
+3. 推送后 Vercel 会自动触发构建。
+4. 项目已包含 `vercel.json`，配置 SPA 回退到 `index.html` 并设置基础安全响应头。
 
 ## 部署到 GitHub Pages
 
