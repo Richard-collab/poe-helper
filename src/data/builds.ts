@@ -36,7 +36,7 @@ export const recommendedBuilds: Build[] = [
     cons: ["单体偏慢", "非常依赖火焰抗性上限与生命恢复"],
     links: [
       { label: "PoB 模板", href: "https://pobb.in" },
-      { label: "poe.ninja 天梯", href: "https://poe.ninja/poe1/builds?skill=Righteous-Fire" },
+      { label: "Maxroll 指南", href: "https://maxroll.gg/poe/build-guides/righteous-fire-inquisitor-leveling-guide" },
     ],
   },
   {
@@ -55,7 +55,7 @@ export const recommendedBuilds: Build[] = [
     cons: ["前期弓类武器较脆", "需要一定攻速与暴击投资"],
     links: [
       { label: "PoB 模板", href: "https://pobb.in" },
-      { label: "poe.ninja 天梯", href: "https://poe.ninja/poe1/builds?skill=Lightning-Arrow" },
+      { label: "Maxroll 指南", href: "https://maxroll.gg/poe/build-guides/lightning-arrow-deadeye-guide" },
     ],
   },
   {
@@ -74,7 +74,7 @@ export const recommendedBuilds: Build[] = [
     cons: ["陷阱手感需要适应", "清图节奏略慢于弓系"],
     links: [
       { label: "PoB 模板", href: "https://pobb.in" },
-      { label: "poe.ninja 天梯", href: "https://poe.ninja/poe1/builds?skill=Seismic-Trap" },
+      { label: "Maxroll 指南", href: "https://maxroll.gg/poe/build-guides/seismic-trap-saboteur-guide" },
     ],
   },
   {
@@ -93,7 +93,7 @@ export const recommendedBuilds: Build[] = [
     cons: ["需要预判箭矢落地", "刷图需要图腾辅助"],
     links: [
       { label: "PoB 模板", href: "https://pobb.in" },
-      { label: "poe.ninja 天梯", href: "https://poe.ninja/poe1/builds?skill=Explosive-Arrow" },
+      { label: "Maxroll 指南", href: "https://maxroll.gg/poe/build-guides/explosive-arrow-ballista-elementalist-guide" },
     ],
   },
   {
@@ -112,7 +112,7 @@ export const recommendedBuilds: Build[] = [
     cons: ["启动成本较高", "对施法速度有硬性要求"],
     links: [
       { label: "PoB 模板", href: "https://pobb.in" },
-      { label: "poe.ninja 天梯", href: "https://poe.ninja/poe1/builds?skill=Penance-Brand" },
+      { label: "Maxroll 指南", href: "https://maxroll.gg/poe/build-guides/penance-brand-inquisitor-guide" },
     ],
   },
 ];
