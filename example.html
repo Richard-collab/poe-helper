@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>流放之路 · 国际服助手</title>
+<meta name="description" content="流放之路国际服玩家的一站式导航：下载、中文化、交易、查价、BD 模拟与分享。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;900&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #121110;
+    --bg-deep: #0c0b0a;
+    --umber: #3b1710;
+    --gold: #fcc736;
+    --gold-pale: #f4cb80;
+    --bronze: #a17f54;
+    --sienna: #8c4a2e;
+    --text: #f0ebe6;
+    --text-dim: #a89e94;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Noto Sans SC',-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;
+    font-weight:300;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  ::selection{background:var(--gold);color:var(--umber)}
+
+  /* ---------- header ---------- */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:20px 4vw;
+    mix-blend-mode:difference;
+    pointer-events:none;
+  }
+  header .brand{
+    font-family:'Cinzel','Noto Serif SC',serif;
+    font-weight:700;font-size:15px;letter-spacing:.22em;
+    color:#fff;text-decoration:none;pointer-events:auto;
+  }
+  header nav{display:flex;gap:34px;pointer-events:auto}
+  header nav a{
+    color:#fff;text-decoration:none;
+    font-size:12px;letter-spacing:.28em;font-weight:400;
+    text-transform:uppercase;
+    position:relative;padding:4px 0;
+  }
+  header nav a::after{
+    content:'';position:absolute;left:0;bottom:0;height:1px;width:0;
+    background:#fff;transition:width .35s cubic-bezier(.7,0,.3,1);
+  }
+  header nav a:hover::after{width:100%}
+  @media (max-width:720px){ header nav{display:none} }
+
+  /* ---------- hero ---------- */
+  .hero{
+    position:relative;height:100vh;min-height:640px;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;
+    background:radial-gradient(ellipse 90% 70% at 50% 62%, var(--umber) 0%, var(--bg) 62%, var(--bg-deep) 100%);
+    overflow:hidden;
+  }
+  #embers{position:absolute;inset:0;width:100%;height:100%;display:block}
+  .hero-rays{
+    position:absolute;inset:0;pointer-events:none;
+    background:
+      conic-gradient(from 180deg at 50% 68%,
+        transparent 0deg, rgba(252,199,54,.05) 8deg, transparent 16deg,
+        transparent 40deg, rgba(252,199,54,.04) 48deg, transparent 56deg,
+        transparent 90deg, rgba(252,199,54,.06) 100deg, transparent 110deg,
+        transparent 250deg, rgba(252,199,54,.05) 262deg, transparent 272deg,
+        transparent 320deg, rgba(252,199,54,.04) 332deg, transparent 340deg);
+    animation:raysway 14s ease-in-out infinite alternate;
+  }
+  @keyframes raysway{from{opacity:.6}to{opacity:1}}
+  .hero-inner{position:relative;z-index:2;padding:0 6vw}
+  .hero-kicker{
+    font-size:12px;letter-spacing:.5em;text-transform:uppercase;
+    color:var(--bronze);margin-bottom:28px;font-weight:400;
+  }
+  .hero h1{
+    font-family:'Noto Serif SC','Cinzel',serif;
+    font-weight:900;
+    font-size:clamp(44px,8.5vw,108px);
+    line-height:1.12;
+    letter-spacing:.06em;
+    color:var(--text);
+    text-shadow:0 0 60px rgba(252,199,54,.18);
+  }
+  .hero h1 em{
+    font-style:normal;color:var(--gold);
+  }
+  .hero-sub{
+    margin-top:26px;
+    font-family:'Cinzel','Noto Serif SC',serif;
+    font-size:clamp(12px,1.4vw,15px);
+    letter-spacing:.34em;text-transform:uppercase;
+    color:var(--gold-pale);
+  }
+  .hero-sub span{margin:0 .6em;color:var(--sienna)}
+  .hero-line{
+    width:1px;height:64px;margin:40px auto 0;
+    background:linear-gradient(to bottom, var(--bronze), transparent);
+    position:relative;overflow:visible;
+  }
+  .hero-line::after{
+    content:'';position:absolute;left:-2.5px;top:0;width:6px;height:6px;border-radius:50%;
+    background:var(--gold);box-shadow:0 0 12px var(--gold);
+    animation:drip 2.6s ease-in-out infinite;
+  }
+  @keyframes drip{0%{top:0;opacity:1}80%{opacity:1}100%{top:60px;opacity:0}}
+
+  /* ---------- sections ---------- */
+  .wrap{max-width:1280px;margin:0 auto;padding:0 4vw}
+  section.block{
+    display:grid;
+    grid-template-columns:minmax(200px,1fr) 2.4fr;
+    gap:48px;
+    padding:110px 0 90px;
+    border-top:1px solid rgba(161,127,84,.28);
+  }
+  @media (max-width:820px){
+    section.block{grid-template-columns:1fr;gap:28px;padding:80px 0 60px}
+  }
+  .block-label{position:sticky;top:110px;align-self:start}
+  @media (max-width:820px){.block-label{position:static}}
+  .block-label .no{
+    font-family:'Cinzel',serif;font-size:13px;letter-spacing:.3em;
+    color:var(--sienna);display:block;margin-bottom:14px;
+  }
+  .block-label h2{
+    font-family:'Noto Serif SC',serif;font-weight:900;
+    font-size:clamp(26px,3vw,38px);letter-spacing:.08em;line-height:1.25;
+    color:var(--text);
+  }
+  .block-label .en{
+    margin-top:10px;font-family:'Cinzel',serif;
+    font-size:11px;letter-spacing:.42em;text-transform:uppercase;
+    color:var(--bronze);
+  }
+  .block-label p{
+    margin-top:22px;font-size:13.5px;color:var(--text-dim);max-width:30ch;
+  }
+
+  /* link rows */
+  .rows{display:flex;flex-direction:column}
+  a.row{
+    display:grid;
+    grid-template-columns:56px minmax(150px,1.1fr) 1.6fr 40px;
+    align-items:center;gap:24px;
+    padding:30px 18px;
+    text-decoration:none;color:var(--text);
+    border-bottom:1px solid rgba(161,127,84,.28);
+    position:relative;overflow:hidden;
+    transition:color .3s ease;
+  }
+  a.row:first-child{border-top:1px solid rgba(161,127,84,.28)}
+  @media (max-width:820px){
+    a.row{grid-template-columns:40px 1fr 32px;grid-template-rows:auto auto;row-gap:6px}
+    a.row .desc{grid-column:2/3}
+  }
+  a.row::before{
+    content:'';position:absolute;inset:0;
+    background:var(--gold);
+    transform:scaleY(0);transform-origin:bottom;
+    transition:transform .38s cubic-bezier(.7,0,.3,1);
+    z-index:0;
+  }
+  a.row:hover::before{transform:scaleY(1)}
+  a.row > *{position:relative;z-index:1}
+  a.row .idx{
+    font-family:'Cinzel',serif;font-size:13px;letter-spacing:.15em;
+    color:var(--sienna);transition:color .3s;
+  }
+  a.row .name{
+    font-family:'Noto Serif SC',serif;font-weight:600;
+    font-size:clamp(17px,1.7vw,21px);letter-spacing:.04em;
+    transition:color .3s;
+  }
+  a.row .name small{
+    display:block;margin-top:3px;
+    font-family:'Cinzel',serif;font-weight:400;
+    font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;
+    color:var(--text-dim);transition:color .3s;
+  }
+  a.row .desc{font-size:13.5px;color:var(--text-dim);transition:color .3s}
+  a.row .arrow{
+    justify-self:end;width:34px;height:34px;
+    display:flex;align-items:center;justify-content:center;
+    transition:transform .38s cubic-bezier(.7,0,.3,1);
+  }
+  a.row .arrow svg{width:20px;height:20px;stroke:var(--bronze);transition:stroke .3s}
+  a.row:hover{color:var(--umber)}
+  a.row:hover .idx{color:var(--sienna)}
+  a.row:hover .name small{color:rgba(59,23,16,.65)}
+  a.row:hover .desc{color:rgba(59,23,16,.78)}
+  a.row:hover .arrow{transform:translate(4px,-4px)}
+  a.row:hover .arrow svg{stroke:var(--umber)}
+
+  /* reveal on scroll */
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.6,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ---------- footer ---------- */
+  footer{
+    border-top:1px solid rgba(161,127,84,.28);
+    background:var(--bg-deep);
+    padding:70px 0 46px;
+  }
+  footer .wrap{display:flex;flex-wrap:wrap;gap:32px;justify-content:space-between;align-items:flex-end}
+  footer .f-brand{
+    font-family:'Cinzel','Noto Serif SC',serif;font-weight:700;
+    font-size:14px;letter-spacing:.24em;color:var(--gold-pale);
+  }
+  footer p{font-size:12px;color:var(--text-dim);max-width:52ch;margin-top:12px}
+  footer .top{
+    font-size:11px;letter-spacing:.3em;text-transform:uppercase;
+    color:var(--bronze);text-decoration:none;
+  }
+  footer .top:hover{color:var(--gold)}
+</style>
+</head>
+<body>
+
+<header>
+  <a class="brand" href="#top">POE · 国际服助手</a>
+  <nav>
+    <a href="#start">新手起步</a>
+    <a href="#trade">交易经济</a>
+    <a href="#builds">BD 流派</a>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<div class="hero" id="top">
+  <canvas id="embers"></canvas>
+  <div class="hero-rays"></div>
+  <div class="hero-inner">
+    <div class="hero-kicker">Path of Exile · International Server</div>
+    <h1>流放之路<br><em>国际服助手</em></h1>
+    <div class="hero-sub">下载<span>·</span>中文化<span>·</span>交易<span>·</span>查价<span>·</span>BD 一站直达</div>
+    <div class="hero-line"></div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- ============ 01 新手起步 ============ -->
+  <section class="block" id="start">
+    <div class="block-label reveal">
+      <span class="no">SECTION · 01</span>
+      <h2>新手起步</h2>
+      <div class="en">Getting Started</div>
+      <p>进入瓦尔克拉斯之前，先装好游戏、配好中文。</p>
+    </div>
+    <div class="rows reveal">
+      <a class="row" href="https://www.pathofexile.com/download" target="_blank" rel="noopener">
+        <span class="idx">01</span>
+        <span class="name">游戏下载<small>Official Client</small></span>
+        <span class="desc">官网客户端下载页，支持独立客户端与 Steam 版本，国际服账号注册也在这里。</span>
+        <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></span>
+      </a>
+      <a class="row" href="https://poedb.tw/tw/chinese" target="_blank" rel="noopener">
+        <span class="idx">02</span>
+        <span class="name">中文化补丁<small>Chinese Localization</small></span>
+        <span class="desc">Poedb 编年史提供的国际服汉化工具与词缀对照，含详细安装教程，赛季更新同步维护。</span>
+        <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ 02 交易经济 ============ -->
+  <section class="block" id="trade">
+    <div class="block-label reveal">
+      <span class="no">SECTION · 02</span>
+      <h2>交易与经济</h2>
+      <div class="en">Trade &amp; Economy</div>
+      <p>市集淘货、实时查价、资料检索——搬砖与剁手的基本功。</p>
+    </div>
+    <div class="rows reveal">
+      <a class="row" href="https://www.pathofexile.com/trade" target="_blank" rel="noopener">
+        <span class="idx">03</span>
+        <span class="name">官方交易市集<small>Official Trade</small></span>
+        <span class="desc">GGG 官方交易平台，词缀筛选、在线状态、批量兑换一应俱全，买卖装备的第一入口。</span>
+        <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></span>
+      </a>
+      <a class="row" href="https://snosme.github.io/awakened-poe-trade/download" target="_blank" rel="noopener">
+        <span class="idx">04</span>
+        <span class="name">Awakened PoE Trade<small>Price Checker</small></span>
+        <span class="desc">游戏内 Ctrl+D 一键查价，支持词缀勾选与实时行情，国际服玩家必备插件。</span>
+        <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></span>
+      </a>
+      <a class="row" href="https://poedb.tw/cn/" target="_blank" rel="noopener">
+        <span class="idx">05</span>
+        <span class="name">Poedb 编年史<small>Game Database</small></span>
+        <span class="desc">最全的中文数据库：物品、技能宝石、词缀权重、机制详解，配装查资料的百科全书。</span>
+        <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ 03 BD 流派 ============ -->
+  <section class="block" id="builds">
+    <div class="block-label reveal">
+      <span class="no">SECTION · 03</span>
+      <h2>BD 流派</h2>
+      <div class="en">Build &amp; Planner</div>
+      <p>从抄作业到写作业：模拟、分享、参考天梯，一站走完。</p>
+    </div>
+    <div class="rows reveal">
+      <a class="row" href="https://pathofbuilding.community/" target="_blank" rel="noopener">
+        <span class="idx">06</span>
+        <span class="name">Path of Building<small>Offline Planner</small></span>
+        <span class="desc">社区版离线 BD 模拟器，精确计算伤害、承伤与天赋路线，配装开发的行业标准。</span>
+        <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></span>
+      </a>
+      <a class="row" href="https://pob.cool" target="_blank" rel="noopener">
+        <span class="idx">07</span>
+        <span class="name">pob.cool<small>Online Planner</small></span>
+        <span class="desc">网页版 PoB，无需安装，浏览器里直接导入导出 BD 代码，摸鱼配装利器。</span>
+        <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></span>
+      </a>
+      <a class="row" href="https://pobb.in" target="_blank" rel="noopener">
+        <span class="idx">08</span>
+        <span class="name">pobb.in<small>Build Sharing</small></span>
+        <span class="desc">粘贴 PoB 代码生成分享链接，天赋树、装备、技能连接一目了然，交流 BD 的标准姿势。</span>
+        <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></span>
+      </a>
+      <a class="row" href="https://poe.ninja/poe1/builds" target="_blank" rel="noopener">
+        <span class="idx">09</span>
+        <span class="name">poe.ninja 天梯<small>Ladder Builds</small></span>
+        <span class="desc">实时抓取天梯前列角色，按职业与技能筛选主流 BD，赛季开荒抄作业首选。</span>
+        <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></span>
+      </a>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="f-brand">POE · 国际服助手</div>
+      <p>本站为玩家自制的工具导航页，与 Grinding Gear Games 无关。Path of Exile 及相关素材版权归 GGG 所有。链接均指向第三方官方或社区站点，请自行甄别安全性。</p>
+    </div>
+    <a class="top" href="#top">回到顶部 ↑</a>
+  </div>
+</footer>
+
+<script>
+/* ---------- golden ember particles ---------- */
+(function(){
+  const cv = document.getElementById('embers');
+  const ctx = cv.getContext('2d');
+  let W, H, parts = [];
+  const COUNT = 90;
+
+  function resize(){
+    W = cv.width = cv.offsetWidth * devicePixelRatio;
+    H = cv.height = cv.offsetHeight * devicePixelRatio;
+  }
+  resize();
+  addEventListener('resize', resize);
+
+  function spawn(init){
+    return {
+      x: Math.random() * W,
+      y: init ? Math.random() * H : H + 10,
+      r: (Math.random() * 1.8 + 0.5) * devicePixelRatio,
+      vy: (Math.random() * .35 + .12) * devicePixelRatio,
+      vx: (Math.random() - .5) * .18 * devicePixelRatio,
+      drift: Math.random() * Math.PI * 2,
+      driftSpd: Math.random() * .012 + .004,
+      alpha: Math.random() * .55 + .15,
+      flicker: Math.random() * Math.PI * 2
+    };
+  }
+  for (let i = 0; i < COUNT; i++) parts.push(spawn(true));
+
+  function tick(){
+    ctx.clearRect(0, 0, W, H);
+    for (let i = 0; i < parts.length; i++){
+      const p = parts[i];
+      p.drift += p.driftSpd;
+      p.flicker += .05;
+      p.x += p.vx + Math.sin(p.drift) * .3 * devicePixelRatio;
+      p.y -= p.vy;
+      if (p.y < -12 || p.x < -12 || p.x > W + 12) parts[i] = spawn(false);
+
+      const a = p.alpha * (0.72 + 0.28 * Math.sin(p.flicker));
+      const g = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.r * 4);
+      g.addColorStop(0, 'rgba(252,199,54,' + a + ')');
+      g.addColorStop(0.4, 'rgba(244,203,128,' + a * .45 + ')');
+      g.addColorStop(1, 'rgba(244,203,128,0)');
+      ctx.fillStyle = g;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r * 4, 0, Math.PI * 2);
+      ctx.fill();
+    }
+    requestAnimationFrame(tick);
+  }
+  tick();
+})();
+
+/* ---------- scroll reveal ---------- */
+(function(){
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: .12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+})();
+</script>
+
+</body>
+</html>
