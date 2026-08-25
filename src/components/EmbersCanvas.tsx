@@ -17,10 +17,11 @@ export function EmbersCanvas() {
 
   useEffect(() => {
     const cv = canvasRef.current;
-    if (!cv) return;
+    const ctx = cv?.getContext("2d");
+    if (!cv || !ctx) return;
 
-    const ctx = cv.getContext("2d");
-    if (!ctx) return;
+    const canvas = cv;
+    const context = ctx;
 
     let W = 0;
     let H = 0;
@@ -30,8 +31,8 @@ export function EmbersCanvas() {
 
     function resize() {
       const dpr = window.devicePixelRatio || 1;
-      W = cv.width = cv.offsetWidth * dpr;
-      H = cv.height = cv.offsetHeight * dpr;
+      W = canvas.width = canvas.offsetWidth * dpr;
+      H = canvas.height = canvas.offsetHeight * dpr;
     }
 
     function spawn(init: boolean): Particle {
@@ -51,7 +52,7 @@ export function EmbersCanvas() {
 
     function tick() {
       const dpr = window.devicePixelRatio || 1;
-      ctx.clearRect(0, 0, W, H);
+      context.clearRect(0, 0, W, H);
 
       for (let i = 0; i < parts.length; i++) {
         const p = parts[i];
@@ -65,14 +66,14 @@ export function EmbersCanvas() {
         }
 
         const a = p.alpha * (0.72 + 0.28 * Math.sin(p.flicker));
-        const g = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.r * 4);
+        const g = context.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.r * 4);
         g.addColorStop(0, `rgba(252,199,54,${a})`);
         g.addColorStop(0.4, `rgba(244,203,128,${a * 0.45})`);
         g.addColorStop(1, "rgba(244,203,128,0)");
-        ctx.fillStyle = g;
-        ctx.beginPath();
-        ctx.arc(p.x, p.y, p.r * 4, 0, Math.PI * 2);
-        ctx.fill();
+        context.fillStyle = g;
+        context.beginPath();
+        context.arc(p.x, p.y, p.r * 4, 0, Math.PI * 2);
+        context.fill();
       }
 
       rafId = requestAnimationFrame(tick);
