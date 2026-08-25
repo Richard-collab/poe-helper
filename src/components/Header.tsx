@@ -1,4 +1,8 @@
-export function Header() {
+interface HeaderProps {
+  onOpenBuilds: () => void;
+}
+
+export function Header({ onOpenBuilds }: HeaderProps) {
   return (
     <header className="app-header">
       <a className="brand" href="#top">
@@ -8,6 +12,9 @@ export function Header() {
         <a href="#start">新手起步</a>
         <a href="#trade">交易经济</a>
         <a href="#builds">BD 流派</a>
+        <button className="nav-button" onClick={onOpenBuilds}>
+          推荐 BD
+        </button>
       </nav>
     </header>
   );

@@ -1,8 +1,10 @@
+import { useState } from "react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { Section } from "./components/Section";
 import { Footer } from "./components/Footer";
+import { RecommendedBuilds } from "./components/RecommendedBuilds";
 import "./index.css";
 
 const sections = [
@@ -99,9 +101,11 @@ const sections = [
 ];
 
 export function App() {
+  const [showBuilds, setShowBuilds] = useState(false);
+
   return (
     <>
-      <Header />
+      <Header onOpenBuilds={() => setShowBuilds(true)} />
       <Hero />
       <div className="wrap">
         {sections.map((s) => (
@@ -109,6 +113,7 @@ export function App() {
         ))}
       </div>
       <Footer />
+      <RecommendedBuilds isOpen={showBuilds} onClose={() => setShowBuilds(false)} />
       <SpeedInsights />
     </>
   );
