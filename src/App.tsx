@@ -59,6 +59,13 @@ const sections = [
         desc: "最全的中文数据库：物品、技能宝石、词缀权重、机制详解，配装查资料的百科全书。",
         href: "https://poedb.tw/cn/",
       },
+      {
+        idx: "06",
+        name: "Wealthy Exile",
+        en: "Wealth Tracker",
+        desc: "追踪仓库与角色资产，统计通货、装备与地图价值，国际服财富可视化管理工具。",
+        href: "https://wealthyexile.com/",
+      },
     ],
   },
   {
@@ -69,28 +76,28 @@ const sections = [
     desc: "从抄作业到写作业：模拟、分享、参考天梯，一站走完。",
     links: [
       {
-        idx: "06",
+        idx: "07",
         name: "Path of Building",
         en: "Offline Planner",
         desc: "社区版离线 BD 模拟器，精确计算伤害、承伤与天赋路线，配装开发的行业标准。",
         href: "https://pathofbuilding.community/",
       },
       {
-        idx: "07",
+        idx: "08",
         name: "pob.cool",
         en: "Online Planner",
         desc: "网页版 PoB，无需安装，浏览器里直接导入导出 BD 代码，摸鱼配装利器。",
         href: "https://pob.cool",
       },
       {
-        idx: "08",
+        idx: "09",
         name: "pobb.in",
         en: "Build Sharing",
         desc: "粘贴 PoB 代码生成分享链接，天赋树、装备、技能连接一目了然，交流 BD 的标准姿势。",
         href: "https://pobb.in",
       },
       {
-        idx: "09",
+        idx: "10",
         name: "poe.ninja 天梯",
         en: "Ladder Builds",
         desc: "实时抓取天梯前列角色，按职业与技能筛选主流 BD，赛季开荒抄作业首选。",
