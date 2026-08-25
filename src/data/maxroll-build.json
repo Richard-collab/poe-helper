@@ -1,0 +1,2973 @@
+{
+  "title": "Winter Orb Elementalist League Starter",
+  "slug": "winter-orb-elementalist-league-starter",
+  "author": "legi",
+  "date": "August 14, 2026",
+  "modified": "August 20, 2026",
+  "featuredImage": "https://assets-ng.maxroll.gg/wordpress/elementalist-build-guide-bg.webp",
+  "tags": [
+    "Curse of the Allflame 3.29"
+  ],
+  "category": "Build Guides",
+  "tableOfContents": [
+    {
+      "id": "introduction",
+      "title": "Introduction"
+    },
+    {
+      "id": "equipment",
+      "title": "Equipment"
+    },
+    {
+      "id": "skills",
+      "title": "Skills"
+    },
+    {
+      "id": "rotation",
+      "title": "Rotation"
+    },
+    {
+      "id": "passive-skill-tree",
+      "title": "Passive Skill Tree"
+    },
+    {
+      "id": "ascendancy",
+      "title": "Ascendancy"
+    },
+    {
+      "id": "pantheon-and-bandits",
+      "title": "Pantheon and Bandits"
+    },
+    {
+      "id": "path-of-building",
+      "title": "Path of Building"
+    },
+    {
+      "id": "faq",
+      "title": "FAQ"
+    },
+    {
+      "id": "video",
+      "title": "Video"
+    },
+    {
+      "id": "summary",
+      "title": "Summary"
+    },
+    {
+      "id": "changelog",
+      "title": "Changelog"
+    }
+  ],
+  "plannerLink": "https://maxroll.gg/poe/planner/qmiy0d0x",
+  "overview": "",
+  "profiles": [
+    {
+      "name": "Campaign",
+      "level": 64,
+      "equipment": [
+        {
+          "slot": "Flask1",
+          "id": 201
+        },
+        {
+          "slot": "Flask2",
+          "id": 202
+        },
+        {
+          "slot": "Weapon",
+          "id": 203
+        },
+        {
+          "slot": "Amulet",
+          "id": 204
+        },
+        {
+          "slot": "Offhand",
+          "id": 205
+        },
+        {
+          "slot": "BodyArmour",
+          "id": 206
+        },
+        {
+          "slot": "Boots",
+          "id": 207
+        },
+        {
+          "slot": "Ring",
+          "id": 208
+        },
+        {
+          "slot": "Belt",
+          "id": 209
+        },
+        {
+          "slot": "Flask3",
+          "id": 210
+        },
+        {
+          "slot": "Flask4",
+          "id": 211
+        },
+        {
+          "slot": "Flask5",
+          "id": 212
+        },
+        {
+          "slot": "Helm",
+          "id": 213
+        },
+        {
+          "slot": "Gloves",
+          "id": 214
+        },
+        {
+          "slot": "Ring2",
+          "id": 215
+        }
+      ],
+      "equipmentVariants": [
+        {
+          "name": "Campaign",
+          "items": [
+            {
+              "slot": "Flask2",
+              "id": 189
+            },
+            {
+              "slot": "Weapon",
+              "id": 190
+            },
+            {
+              "slot": "Amulet",
+              "id": 191
+            },
+            {
+              "slot": "Offhand",
+              "id": 192
+            },
+            {
+              "slot": "BodyArmour",
+              "id": 193
+            },
+            {
+              "slot": "Boots",
+              "id": 194
+            },
+            {
+              "slot": "Ring",
+              "id": 195
+            },
+            {
+              "slot": "Belt",
+              "id": 196
+            },
+            {
+              "slot": "Flask3",
+              "id": 197
+            },
+            {
+              "slot": "Helm",
+              "id": 198
+            },
+            {
+              "slot": "Gloves",
+              "id": 199
+            },
+            {
+              "slot": "Ring2",
+              "id": 200
+            }
+          ]
+        },
+        {
+          "name": "Entering Maps",
+          "items": [
+            {
+              "slot": "Flask1",
+              "id": 201
+            },
+            {
+              "slot": "Flask2",
+              "id": 202
+            },
+            {
+              "slot": "Weapon",
+              "id": 203
+            },
+            {
+              "slot": "Amulet",
+              "id": 204
+            },
+            {
+              "slot": "Offhand",
+              "id": 205
+            },
+            {
+              "slot": "BodyArmour",
+              "id": 206
+            },
+            {
+              "slot": "Boots",
+              "id": 207
+            },
+            {
+              "slot": "Ring",
+              "id": 208
+            },
+            {
+              "slot": "Belt",
+              "id": 209
+            },
+            {
+              "slot": "Flask3",
+              "id": 210
+            },
+            {
+              "slot": "Flask4",
+              "id": 211
+            },
+            {
+              "slot": "Flask5",
+              "id": 212
+            },
+            {
+              "slot": "Helm",
+              "id": 213
+            },
+            {
+              "slot": "Gloves",
+              "id": 214
+            },
+            {
+              "slot": "Ring2",
+              "id": 215
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "slot": "Main",
+          "gems": [
+            "WinterOrb",
+            "SupportIncreasedCriticalStrikes",
+            "SupportLesserMultipleProjectiles",
+            "SupportFocusedChannelling",
+            "SupportInfusedChannelling",
+            "SupportMoreDuration"
+          ]
+        },
+        {
+          "slot": "Offhand",
+          "gems": [
+            "ShieldCharge",
+            "SupportFasterAttacks",
+            "SupportMomentum"
+          ]
+        },
+        {
+          "slot": "Main",
+          "gems": [
+            "Frostblink",
+            "SupportArcaneSurge",
+            "VaalColdSnap"
+          ]
+        },
+        {
+          "slot": "Main",
+          "gems": [
+            "Zealotry",
+            "HeraldOfIce",
+            "SupportIceBite"
+          ]
+        },
+        {
+          "slot": "Main",
+          "gems": [
+            "AssassinsMark",
+            "Frostbite"
+          ]
+        },
+        {
+          "slot": "Main",
+          "gems": [
+            "SummonLightningGolem",
+            "SummonFlameGolem",
+            "SummonIceGolem",
+            "SummonStoneGolem"
+          ]
+        }
+      ],
+      "passives": {
+        "variants": [
+          {
+            "name": "1-18",
+            "version": 3290,
+            "history": [
+              57264,
+              33296,
+              36774,
+              17579,
+              21934,
+              11420,
+              4184,
+              44955,
+              11128,
+              8135,
+              38148,
+              12852,
+              1031,
+              7938,
+              34157,
+              54657,
+              9432,
+              28680
+            ],
+            "masteries": {
+              "28680": 2
+            },
+            "jewels": {},
+            "tattoos": {},
+            "notes": []
+          },
+          {
+            "name": "18-30",
+            "version": 3290,
+            "history": [
+              57264,
+              33296,
+              36774,
+              17579,
+              21934,
+              11420,
+              4184,
+              44955,
+              11128,
+              8135,
+              38148,
+              12852,
+              1031,
+              7938,
+              34157,
+              54657,
+              9432,
+              28680,
+              33755,
+              21958,
+              14936,
+              44184,
+              4367,
+              19501,
+              12128,
+              5972,
+              36226,
+              12439,
+              21460,
+              60170,
+              14021,
+              55332,
+              54279,
+              56461
+            ],
+            "masteries": {
+              "28680": 2,
+              "60170": 2
+            },
+            "jewels": {},
+            "tattoos": {},
+            "notes": []
+          },
+          {
+            "name": "31-45 (WOrb)",
+            "version": 3290,
+            "history": [
+              57264,
+              33296,
+              36774,
+              17579,
+              21934,
+              11420,
+              4184,
+              44955,
+              11128,
+              8135,
+              38148,
+              12852,
+              1031,
+              7938,
+              34157,
+              54657,
+              9432,
+              28680,
+              33755,
+              21958,
+              14936,
+              44184,
+              4367,
+              19501,
+              12128,
+              5972,
+              36226,
+              12439,
+              21460,
+              60170,
+              14021,
+              55332,
+              22088,
+              54279,
+              56461,
+              15167,
+              24872,
+              34506,
+              36412,
+              22090,
+              40609,
+              8833,
+              5296,
+              33310,
+              12831,
+              53005,
+              41870,
+              38207,
+              49605,
+              32710,
+              10153,
+              32345,
+              48362,
+              27203
+            ],
+            "masteries": {
+              "28680": 2,
+              "38207": 1,
+              "60170": 2
+            },
+            "jewels": {},
+            "tattoos": {},
+            "notes": []
+          },
+          {
+            "name": "Campaign",
+            "version": 3290,
+            "history": [
+              57264,
+              33296,
+              36774,
+              17579,
+              21934,
+              11420,
+              4184,
+              44955,
+              11128,
+              8135,
+              38148,
+              12852,
+              1031,
+              7938,
+              34157,
+              54657,
+              9432,
+              28680,
+              33755,
+              21958,
+              14936,
+              44184,
+              4367,
+              19501,
+              12128,
+              5972,
+              36226,
+              12439,
+              21460,
+              60170,
+              14021,
+              55332,
+              22088,
+              54279,
+              56461,
+              15167,
+              24872,
+              34506,
+              36412,
+              22090,
+              40609,
+              8833,
+              5296,
+              33310,
+              12831,
+              53005,
+              41870,
+              38207,
+              53290,
+              40483,
+              62849,
+              49605,
+              32710,
+              32345,
+              10153,
+              48362,
+              27203,
+              51801,
+              14745,
+              53573,
+              4502,
+              20852,
+              36585,
+              42649,
+              37114,
+              61259,
+              58210,
+              19008,
+              11689,
+              46904,
+              63447,
+              12888,
+              16954,
+              12783,
+              9261,
+              56158,
+              20528,
+              1822,
+              38190,
+              61653,
+              18769,
+              {
+                "add": [
+                  1957,
+                  739,
+                  18866
+                ],
+                "remove": [
+                  21934,
+                  17579,
+                  36774
+                ]
+              },
+              1346,
+              16790,
+              53493,
+              {
+                "add": [
+                  41635,
+                  4036,
+                  15228,
+                  47306,
+                  9586
+                ],
+                "remove": [
+                  14021,
+                  22088,
+                  55332
+                ]
+              },
+              58998,
+              27038
+            ],
+            "masteries": {
+              "9586": 0,
+              "28680": 2,
+              "38207": 1,
+              "60170": 2
+            },
+            "jewels": {},
+            "tattoos": {},
+            "notes": []
+          }
+        ],
+        "active": 3
+      },
+      "ascendancy": "Elementalist",
+      "bandits": "alira",
+      "pantheon": {
+        "TheBrineKing": [
+          true,
+          true,
+          true
+        ],
+        "Abberath": [
+          true
+        ]
+      },
+      "skillRotations": [
+        {
+          "name": "1-12",
+          "html": "<p>Spam Kinetic Bolt. Use Holy Flame Totem andFlame Wall for Rares/Bosses.</p>",
+          "gems": [
+            [
+              "HolyFlameTotem",
+              "FlameWall"
+            ],
+            [
+              "KineticBolt"
+            ]
+          ]
+        },
+        {
+          "name": "12-15",
+          "html": "<ul><li>Apply Exposure with Frost Bomb. </li><li>Clear with both Creeping Frost and Wintertide Brand. </li><li>Supplement single target with Holy Flame Totem.</li></ul>",
+          "gems": [
+            [
+              "FrostBomb"
+            ],
+            [
+              "CreepingFrost",
+              "WintertideBrand"
+            ],
+            [
+              "HolyFlameTotem",
+              "FlameWall"
+            ]
+          ]
+        },
+        {
+          "name": "16-31",
+          "html": "<ul><li>Apply Exposure and Curse. </li><li>Clear with Cold Snap.</li><li>On Boss/Rare keep 2 Wintertide Brands and Creeping Frost damage over time up.</li></ul>",
+          "gems": [
+            [
+              "FrostBomb",
+              "Frostbite"
+            ],
+            [
+              "ColdSnap",
+              "CreepingFrost",
+              "WintertideBrand"
+            ]
+          ]
+        },
+        {
+          "name": "31>",
+          "html": "<ul><li>The more stages the Winter Orb has, the slower they decay. Try to channel to as high stages as necessary then run. Tap  Winter Orb  to keep tghe stages high.</li><li>On Rare/Boss keep channelling to increase the frequency of projectiles.</li></ul>",
+          "gems": [
+            [
+              "FrostBomb",
+              "Frostbite",
+              "AssassinsMarkTriggered"
+            ],
+            [
+              "WinterOrb"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Early",
+      "level": 64,
+      "equipment": [
+        {
+          "slot": "Flask1",
+          "id": 348
+        },
+        {
+          "slot": "Flask2",
+          "id": 349
+        },
+        {
+          "slot": "Weapon",
+          "id": 350
+        },
+        {
+          "slot": "Amulet",
+          "id": 351
+        },
+        {
+          "slot": "Offhand",
+          "id": 352
+        },
+        {
+          "slot": "BodyArmour",
+          "id": 353
+        },
+        {
+          "slot": "Boots",
+          "id": 354
+        },
+        {
+          "slot": "Ring",
+          "id": 355
+        },
+        {
+          "slot": "Belt",
+          "id": 356
+        },
+        {
+          "slot": "Flask3",
+          "id": 357
+        },
+        {
+          "slot": "Flask4",
+          "id": 358
+        },
+        {
+          "slot": "Flask5",
+          "id": 359
+        },
+        {
+          "slot": "Gloves",
+          "id": 361
+        },
+        {
+          "slot": "Ring2",
+          "id": 362
+        },
+        {
+          "slot": "Helm",
+          "id": 178
+        }
+      ],
+      "equipmentVariants": [
+        {
+          "name": "Earlygame",
+          "items": [
+            {
+              "slot": "Flask1",
+              "id": 348
+            },
+            {
+              "slot": "Flask2",
+              "id": 349
+            },
+            {
+              "slot": "Weapon",
+              "id": 350
+            },
+            {
+              "slot": "Amulet",
+              "id": 351
+            },
+            {
+              "slot": "Offhand",
+              "id": 352
+            },
+            {
+              "slot": "BodyArmour",
+              "id": 353
+            },
+            {
+              "slot": "Boots",
+              "id": 354
+            },
+            {
+              "slot": "Ring",
+              "id": 355
+            },
+            {
+              "slot": "Belt",
+              "id": 356
+            },
+            {
+              "slot": "Flask3",
+              "id": 357
+            },
+            {
+              "slot": "Flask4",
+              "id": 358
+            },
+            {
+              "slot": "Flask5",
+              "id": 359
+            },
+            {
+              "slot": "Gloves",
+              "id": 361
+            },
+            {
+              "slot": "Ring2",
+              "id": 362
+            },
+            {
+              "slot": "Helm",
+              "id": 178
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "slot": "BodyArmour",
+          "gems": [
+            "WinterOrb",
+            "SupportFocusedChannelling",
+            "SupportIncreasedCriticalStrikes",
+            "SupportLesserMultipleProjectiles",
+            "SupportInfusedChannelling",
+            "SupportIncreasedCriticalDamage"
+          ]
+        },
+        {
+          "slot": "Main",
+          "gems": [
+            "ShieldCharge",
+            "SupportFasterAttacks",
+            "SupportMomentum"
+          ]
+        },
+        {
+          "slot": "Gloves",
+          "gems": [
+            "Frostblink",
+            "SupportArcaneSurge",
+            "Frostbite",
+            "AssassinsMark"
+          ]
+        },
+        {
+          "slot": "Main",
+          "gems": [
+            "Zealotry",
+            "TempestShield",
+            "VaalColdSnap"
+          ]
+        },
+        {
+          "slot": "Main",
+          "gems": [
+            "HeraldOfIce",
+            "SupportIceBite",
+            "SupportIncreasedCriticalStrikes"
+          ]
+        },
+        {
+          "slot": "Boots",
+          "gems": [
+            "SummonLightningGolem",
+            "SummonFlameGolem",
+            "SummonIceGolem",
+            "SummonStoneGolem"
+          ]
+        }
+      ],
+      "passives": {
+        "variants": [
+          {
+            "name": "Earlygame",
+            "version": 3290,
+            "history": [
+              57264,
+              33296,
+              1957,
+              739,
+              18866,
+              11420,
+              4184,
+              44955,
+              11128,
+              8135,
+              38148,
+              12852,
+              1031,
+              7938,
+              34157,
+              54657,
+              9432,
+              28680,
+              33755,
+              21958,
+              14936,
+              44184,
+              4367,
+              19501,
+              12128,
+              5972,
+              36226,
+              12439,
+              21460,
+              60170,
+              14021,
+              55332,
+              22088,
+              54279,
+              56461,
+              15167,
+              24872,
+              34506,
+              36412,
+              22090,
+              40609,
+              8833,
+              5296,
+              33310,
+              12831,
+              53005,
+              41870,
+              38207,
+              49605,
+              32710,
+              32345,
+              48362,
+              27203,
+              10153,
+              51801,
+              14745,
+              53573,
+              53290,
+              40483,
+              62849,
+              4502,
+              20852,
+              36585,
+              42649,
+              37114,
+              61259,
+              58210,
+              19008,
+              11689,
+              46904,
+              63447,
+              12888,
+              16954,
+              12783,
+              9261,
+              56158,
+              20528,
+              {
+                "add": [
+                  1346,
+                  16790,
+                  53493
+                ],
+                "remove": [
+                  14021,
+                  22088,
+                  55332
+                ]
+              },
+              41635,
+              14113,
+              4036,
+              15228,
+              47306,
+              9586,
+              1822,
+              38190,
+              61653,
+              18769,
+              51219,
+              13232,
+              9567,
+              55230,
+              58998,
+              27038,
+              39841,
+              36678,
+              7444,
+              63398,
+              36452,
+              46842,
+              19595,
+              57197,
+              {
+                "remove": [
+                  14113
+                ]
+              },
+              64210,
+              {
+                "add": [
+                  44723,
+                  19635,
+                  50826,
+                  18174,
+                  8302,
+                  5935,
+                  25831,
+                  21974,
+                  32932
+                ],
+                "remove": [
+                  7938,
+                  9432,
+                  28680,
+                  34157,
+                  54657,
+                  33755,
+                  1031,
+                  12852,
+                  38148
+                ]
+              },
+              27733,
+              5743,
+              58218,
+              13862,
+              15117,
+              61419,
+              60440,
+              30767,
+              3359,
+              6250,
+              22535,
+              16123,
+              12246,
+              43061,
+              27323,
+              6770,
+              45558,
+              33783,
+              {
+                "add": [
+                  3656,
+                  24050,
+                  10763,
+                  28754,
+                  40644,
+                  42686
+                ],
+                "remove": [
+                  12831,
+                  41870,
+                  53005,
+                  38207,
+                  40483,
+                  53290,
+                  62849
+                ]
+              },
+              35283,
+              35894,
+              21835,
+              25058,
+              9877,
+              5823,
+              32241
+            ],
+            "masteries": {
+              "9586": 0,
+              "13862": 5,
+              "14113": 1,
+              "16123": 1,
+              "27733": 2,
+              "28680": 2,
+              "32241": 1,
+              "34723": 3,
+              "38207": 1,
+              "45558": 1,
+              "55230": 0,
+              "60170": 2
+            },
+            "jewels": {
+              "61419": 247
+            },
+            "tattoos": {},
+            "notes": []
+          }
+        ],
+        "active": 0
+      },
+      "ascendancy": "Elementalist",
+      "bandits": "alira",
+      "pantheon": {
+        "TheBrineKing": [
+          true,
+          true,
+          true
+        ],
+        "Abberath": [
+          true
+        ]
+      },
+      "skillRotations": [
+        {
+          "name": "Main",
+          "html": "",
+          "gems": [
+            [
+              "Frostbite",
+              "AssassinsMark"
+            ],
+            [
+              "WinterOrb"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Midgame",
+      "level": 64,
+      "equipment": [
+        {
+          "slot": "Flask1",
+          "id": 494
+        },
+        {
+          "slot": "Flask2",
+          "id": 495
+        },
+        {
+          "slot": "Weapon",
+          "id": 496
+        },
+        {
+          "slot": "Amulet",
+          "id": 497
+        },
+        {
+          "slot": "Offhand",
+          "id": 498
+        },
+        {
+          "slot": "BodyArmour",
+          "id": 499
+        },
+        {
+          "slot": "Boots",
+          "id": 500
+        },
+        {
+          "slot": "Ring",
+          "id": 501
+        },
+        {
+          "slot": "Belt",
+          "id": 502
+        },
+        {
+          "slot": "Flask3",
+          "id": 503
+        },
+        {
+          "slot": "Flask4",
+          "id": 504
+        },
+        {
+          "slot": "Flask5",
+          "id": 505
+        },
+        {
+          "slot": "Helm",
+          "id": 506
+        },
+        {
+          "slot": "Gloves",
+          "id": 507
+        },
+        {
+          "slot": "Ring2",
+          "id": 508
+        },
+        {
+          "slot": "Jewel1",
+          "id": 180
+        }
+      ],
+      "equipmentVariants": [
+        {
+          "name": "Midgame",
+          "items": [
+            {
+              "slot": "Flask1",
+              "id": 494
+            },
+            {
+              "slot": "Flask2",
+              "id": 495
+            },
+            {
+              "slot": "Weapon",
+              "id": 496
+            },
+            {
+              "slot": "Amulet",
+              "id": 497
+            },
+            {
+              "slot": "Offhand",
+              "id": 498
+            },
+            {
+              "slot": "BodyArmour",
+              "id": 499
+            },
+            {
+              "slot": "Boots",
+              "id": 500
+            },
+            {
+              "slot": "Ring",
+              "id": 501
+            },
+            {
+              "slot": "Belt",
+              "id": 502
+            },
+            {
+              "slot": "Flask3",
+              "id": 503
+            },
+            {
+              "slot": "Flask4",
+              "id": 504
+            },
+            {
+              "slot": "Flask5",
+              "id": 505
+            },
+            {
+              "slot": "Helm",
+              "id": 506
+            },
+            {
+              "slot": "Gloves",
+              "id": 507
+            },
+            {
+              "slot": "Ring2",
+              "id": 508
+            },
+            {
+              "slot": "Jewel1",
+              "id": 180
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "slot": "Helm",
+          "gems": [
+            "WinterOrb",
+            "SupportFocusedChannelling",
+            "SupportIncreasedCriticalDamage",
+            "SupportArcaneSurge"
+          ]
+        },
+        {
+          "slot": "Weapon",
+          "gems": [
+            "ShieldCharge",
+            "SupportFasterAttacks",
+            "SupportMomentum"
+          ]
+        },
+        {
+          "slot": "Offhand",
+          "gems": [
+            "SupportCastWhenDamageTaken",
+            "SupportMoreDuration",
+            "ImmortalCall"
+          ]
+        },
+        {
+          "slot": "Gloves",
+          "gems": [
+            "Frostblink",
+            "SupportArcaneSurge",
+            "Frostbite",
+            "FrostShield"
+          ]
+        },
+        {
+          "slot": "BodyArmour",
+          "gems": [
+            "TempestShield",
+            "Zealotry",
+            "FleshAndStone",
+            "HeraldOfIce",
+            "SupportEnlighten",
+            "SupportIncreasedCriticalStrikes"
+          ]
+        },
+        {
+          "slot": "Boots",
+          "gems": [
+            "SummonLightningGolem",
+            "SummonFlameGolem",
+            "SummonIceGolem",
+            "SummonStoneGolemAltY"
+          ]
+        }
+      ],
+      "passives": {
+        "variants": [
+          {
+            "name": "Midgame",
+            "version": 3290,
+            "history": [
+              57264,
+              33296,
+              1957,
+              739,
+              18866,
+              11420,
+              4184,
+              44955,
+              1346,
+              16790,
+              53493,
+              44723,
+              19635,
+              53279,
+              61419,
+              15117,
+              4367,
+              19501,
+              5972,
+              36412,
+              22090,
+              40609,
+              8833,
+              60170,
+              15167,
+              24872,
+              34506,
+              5296,
+              49651,
+              41635,
+              4036,
+              15228,
+              47306,
+              9586,
+              33310,
+              51219,
+              13232,
+              9567,
+              55230,
+              12128,
+              44184,
+              63447,
+              39841,
+              36678,
+              7444,
+              63398,
+              36452,
+              46842,
+              16123,
+              64210,
+              5743,
+              9386,
+              14057,
+              6764,
+              19919,
+              55743,
+              6967,
+              38921,
+              58218,
+              32241,
+              26270,
+              60472,
+              34171,
+              26196,
+              37999,
+              34173,
+              11730,
+              23027,
+              6712,
+              36949,
+              10031,
+              15064,
+              12536,
+              33435,
+              44799,
+              41472,
+              61471,
+              26866,
+              54694,
+              40927,
+              61308,
+              15365,
+              49254,
+              29061,
+              55993,
+              41251,
+              13164,
+              46897,
+              35958,
+              30393,
+              5935,
+              25831,
+              21974,
+              32932,
+              20987,
+              52502,
+              7960,
+              43989,
+              834899,
+              834905,
+              12888,
+              16954,
+              12783,
+              9261,
+              34723,
+              14936,
+              21958,
+              58210,
+              62970,
+              46904,
+              27733,
+              56158,
+              20528,
+              50826,
+              18174,
+              13862,
+              834902,
+              26661,
+              557652,
+              54279,
+              56461,
+              37114,
+              61259,
+              58998,
+              27038,
+              19595,
+              57197
+            ],
+            "masteries": {
+              "9586": 1,
+              "13862": 5,
+              "16123": 0,
+              "27733": 1,
+              "30393": 4,
+              "32241": 1,
+              "34723": 3,
+              "38921": 3,
+              "55230": 0,
+              "60170": 2
+            },
+            "jewels": {
+              "7960": 297,
+              "26196": 298,
+              "61419": 299,
+              "834902": 179
+            },
+            "tattoos": {
+              "15064": "Ngamahu1"
+            },
+            "notes": []
+          }
+        ],
+        "active": 0
+      },
+      "ascendancy": "Elementalist",
+      "bandits": "alira",
+      "pantheon": {
+        "TheBrineKing": [
+          true,
+          true,
+          true
+        ],
+        "Abberath": [
+          true
+        ]
+      },
+      "skillRotations": [
+        {
+          "name": "Main",
+          "html": "",
+          "gems": [
+            [
+              "Frostbite",
+              "AssassinsMark"
+            ],
+            [
+              "WinterOrb"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Late",
+      "level": 64,
+      "equipment": [
+        {
+          "slot": "Flask1",
+          "id": 651
+        },
+        {
+          "slot": "Flask2",
+          "id": 652
+        },
+        {
+          "slot": "Weapon",
+          "id": 653
+        },
+        {
+          "slot": "Amulet",
+          "id": 654
+        },
+        {
+          "slot": "Offhand",
+          "id": 655
+        },
+        {
+          "slot": "BodyArmour",
+          "id": 656
+        },
+        {
+          "slot": "Boots",
+          "id": 657
+        },
+        {
+          "slot": "Ring",
+          "id": 658
+        },
+        {
+          "slot": "Belt",
+          "id": 659
+        },
+        {
+          "slot": "Flask3",
+          "id": 660
+        },
+        {
+          "slot": "Flask4",
+          "id": 661
+        },
+        {
+          "slot": "Flask5",
+          "id": 662
+        },
+        {
+          "slot": "Helm",
+          "id": 663
+        },
+        {
+          "slot": "Gloves",
+          "id": 664
+        },
+        {
+          "slot": "Ring2",
+          "id": 665
+        },
+        {
+          "slot": "Jewel1",
+          "id": 175
+        }
+      ],
+      "equipmentVariants": [
+        {
+          "name": "Endgame",
+          "items": [
+            {
+              "slot": "Flask1",
+              "id": 651
+            },
+            {
+              "slot": "Flask2",
+              "id": 652
+            },
+            {
+              "slot": "Weapon",
+              "id": 653
+            },
+            {
+              "slot": "Amulet",
+              "id": 654
+            },
+            {
+              "slot": "Offhand",
+              "id": 655
+            },
+            {
+              "slot": "BodyArmour",
+              "id": 656
+            },
+            {
+              "slot": "Boots",
+              "id": 657
+            },
+            {
+              "slot": "Ring",
+              "id": 658
+            },
+            {
+              "slot": "Belt",
+              "id": 659
+            },
+            {
+              "slot": "Flask3",
+              "id": 660
+            },
+            {
+              "slot": "Flask4",
+              "id": 661
+            },
+            {
+              "slot": "Flask5",
+              "id": 662
+            },
+            {
+              "slot": "Helm",
+              "id": 663
+            },
+            {
+              "slot": "Gloves",
+              "id": 664
+            },
+            {
+              "slot": "Ring2",
+              "id": 665
+            },
+            {
+              "slot": "Jewel1",
+              "id": 175
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "slot": "Helm",
+          "gems": [
+            "WinterOrb",
+            "SupportFocusedChannelling",
+            "SupportIncreasedCriticalDamage",
+            "SupportArcaneSurge"
+          ]
+        },
+        {
+          "slot": "Weapon",
+          "gems": [
+            "ShieldCharge",
+            "SupportFasterAttacks",
+            "FrostShield"
+          ]
+        },
+        {
+          "slot": "Offhand",
+          "gems": [
+            "SupportCastWhenDamageTaken",
+            "SupportMoreDuration",
+            "ImmortalCall"
+          ]
+        },
+        {
+          "slot": "BodyArmour",
+          "gems": [
+            "TempestShield",
+            "Zealotry",
+            "HeraldOfIce",
+            "SupportScornfulHerald",
+            "SupportEnlighten",
+            "FleshAndStone"
+          ]
+        },
+        {
+          "slot": "Gloves",
+          "gems": [
+            "Frostblink",
+            "Frostbite",
+            "SupportArcaneSurge",
+            "PactOfLycia"
+          ]
+        },
+        {
+          "slot": "Boots",
+          "gems": [
+            "SummonLightningGolem",
+            "SummonFlameGolem",
+            "SummonIceGolem",
+            "SummonStoneGolemAltY"
+          ]
+        }
+      ],
+      "passives": {
+        "variants": [
+          {
+            "name": "Endgame",
+            "version": 3290,
+            "history": [
+              57264,
+              33296,
+              1957,
+              739,
+              18866,
+              11420,
+              4184,
+              44955,
+              1346,
+              16790,
+              53493,
+              44723,
+              19635,
+              53279,
+              61419,
+              15117,
+              4367,
+              19501,
+              5972,
+              36412,
+              22090,
+              40609,
+              8833,
+              60170,
+              15167,
+              24872,
+              34506,
+              5296,
+              33310,
+              49605,
+              22618,
+              21033,
+              21984,
+              18756,
+              431170,
+              431172,
+              431178,
+              431176,
+              51219,
+              13232,
+              9567,
+              55230,
+              12128,
+              44184,
+              63447,
+              39841,
+              36678,
+              7444,
+              63398,
+              36452,
+              46842,
+              16123,
+              64210,
+              5743,
+              9386,
+              14057,
+              6764,
+              19919,
+              55743,
+              6967,
+              38921,
+              58218,
+              32241,
+              26270,
+              60472,
+              34171,
+              26196,
+              37999,
+              34173,
+              29199,
+              15064,
+              10031,
+              36949,
+              12536,
+              33435,
+              44799,
+              41472,
+              54694,
+              40927,
+              61308,
+              11730,
+              46897,
+              35958,
+              30393,
+              5935,
+              25831,
+              21974,
+              32932,
+              20987,
+              52502,
+              7960,
+              43989,
+              834898,
+              834900,
+              834906,
+              834904,
+              13201,
+              342291,
+              342294,
+              7956,
+              258372,
+              342297,
+              834903,
+              834902,
+              12888,
+              16954,
+              12783,
+              9261,
+              14936,
+              21958,
+              58210,
+              19008,
+              11689,
+              46904,
+              27733,
+              56158,
+              20528,
+              50826,
+              18174,
+              13862,
+              54279,
+              56461,
+              37114,
+              61259,
+              58998,
+              27038,
+              19595,
+              57197
+            ],
+            "masteries": {
+              "13862": 5,
+              "16123": 0,
+              "27733": 1,
+              "30393": 4,
+              "32241": 1,
+              "38921": 3,
+              "55230": 0,
+              "60170": 2
+            },
+            "jewels": {
+              "7960": 364,
+              "21984": 365,
+              "26196": 366,
+              "61419": 367,
+              "342294": 368,
+              "431172": 369,
+              "431176": 370,
+              "834900": 371,
+              "834904": 372
+            },
+            "tattoos": {
+              "15064": "Ngamahu1",
+              "23027": "Ngamahu1",
+              "34171": "Ngamahu1",
+              "60472": "Ngamahu1"
+            },
+            "notes": []
+          }
+        ],
+        "active": 0
+      },
+      "ascendancy": "Elementalist",
+      "bandits": "alira",
+      "pantheon": {
+        "TheBrineKing": [
+          true,
+          true,
+          true
+        ],
+        "Abberath": [
+          true
+        ]
+      },
+      "skillRotations": [
+        {
+          "name": "Main",
+          "html": "<p>Channel</p><p>Rare/Boss</p>",
+          "gems": [
+            [
+              "Frostbite"
+            ],
+            [
+              "WinterOrb"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Aspirational",
+      "level": 64,
+      "equipment": [
+        {
+          "slot": "Flask1",
+          "id": 798
+        },
+        {
+          "slot": "Flask2",
+          "id": 799
+        },
+        {
+          "slot": "Weapon",
+          "id": 800
+        },
+        {
+          "slot": "Amulet",
+          "id": 801
+        },
+        {
+          "slot": "Offhand",
+          "id": 802
+        },
+        {
+          "slot": "BodyArmour",
+          "id": 803
+        },
+        {
+          "slot": "Boots",
+          "id": 804
+        },
+        {
+          "slot": "Ring",
+          "id": 805
+        },
+        {
+          "slot": "Belt",
+          "id": 806
+        },
+        {
+          "slot": "Flask3",
+          "id": 807
+        },
+        {
+          "slot": "Flask4",
+          "id": 808
+        },
+        {
+          "slot": "Flask5",
+          "id": 809
+        },
+        {
+          "slot": "Helm",
+          "id": 810
+        },
+        {
+          "slot": "Gloves",
+          "id": 811
+        },
+        {
+          "slot": "Ring2",
+          "id": 812
+        },
+        {
+          "slot": "Jewel1",
+          "id": 172
+        }
+      ],
+      "equipmentVariants": [
+        {
+          "name": "Life Svalinn",
+          "items": [
+            {
+              "slot": "Flask1",
+              "id": 783
+            },
+            {
+              "slot": "Flask2",
+              "id": 784
+            },
+            {
+              "slot": "Weapon",
+              "id": 785
+            },
+            {
+              "slot": "Amulet",
+              "id": 786
+            },
+            {
+              "slot": "Offhand",
+              "id": 787
+            },
+            {
+              "slot": "BodyArmour",
+              "id": 788
+            },
+            {
+              "slot": "Boots",
+              "id": 789
+            },
+            {
+              "slot": "Ring",
+              "id": 790
+            },
+            {
+              "slot": "Belt",
+              "id": 791
+            },
+            {
+              "slot": "Flask3",
+              "id": 792
+            },
+            {
+              "slot": "Flask4",
+              "id": 793
+            },
+            {
+              "slot": "Flask5",
+              "id": 794
+            },
+            {
+              "slot": "Helm",
+              "id": 795
+            },
+            {
+              "slot": "Gloves",
+              "id": 796
+            },
+            {
+              "slot": "Ring2",
+              "id": 797
+            },
+            {
+              "slot": "Jewel1",
+              "id": 171
+            }
+          ]
+        },
+        {
+          "name": "CI Svalinn",
+          "items": [
+            {
+              "slot": "Flask1",
+              "id": 798
+            },
+            {
+              "slot": "Flask2",
+              "id": 799
+            },
+            {
+              "slot": "Weapon",
+              "id": 800
+            },
+            {
+              "slot": "Amulet",
+              "id": 801
+            },
+            {
+              "slot": "Offhand",
+              "id": 802
+            },
+            {
+              "slot": "BodyArmour",
+              "id": 803
+            },
+            {
+              "slot": "Boots",
+              "id": 804
+            },
+            {
+              "slot": "Ring",
+              "id": 805
+            },
+            {
+              "slot": "Belt",
+              "id": 806
+            },
+            {
+              "slot": "Flask3",
+              "id": 807
+            },
+            {
+              "slot": "Flask4",
+              "id": 808
+            },
+            {
+              "slot": "Flask5",
+              "id": 809
+            },
+            {
+              "slot": "Helm",
+              "id": 810
+            },
+            {
+              "slot": "Gloves",
+              "id": 811
+            },
+            {
+              "slot": "Ring2",
+              "id": 812
+            },
+            {
+              "slot": "Jewel1",
+              "id": 172
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "slot": "Helm",
+          "gems": [
+            "WinterOrb",
+            "SupportIncreasedCriticalDamage",
+            "SupportFocusedChannelling",
+            "SupportInspiration"
+          ]
+        },
+        {
+          "slot": "Weapon",
+          "gems": [
+            "Frostblink",
+            "SupportArcaneSurge",
+            "Frostbite"
+          ]
+        },
+        {
+          "slot": "Offhand",
+          "gems": [
+            "SupportCastWhenDamageTaken",
+            "ImmortalCall",
+            "TempestShield"
+          ]
+        },
+        {
+          "slot": "Gloves",
+          "gems": [
+            "ShieldCharge",
+            "SupportFasterAttacks",
+            "PactOfLycia"
+          ]
+        },
+        {
+          "slot": "BodyArmour",
+          "gems": [
+            "Discipline",
+            "FleshAndStone",
+            "HeraldOfIce",
+            "SupportScornfulHerald",
+            "SupportIncreasedCriticalDamage",
+            "SupportEnlighten"
+          ]
+        },
+        {
+          "slot": "Boots",
+          "gems": [
+            "SummonFlameGolem",
+            "SummonIceGolem",
+            "SummonLightningGolem",
+            "SummonStoneGolem"
+          ]
+        }
+      ],
+      "passives": {
+        "variants": [
+          {
+            "name": "Life Svalinn",
+            "version": 3290,
+            "history": [
+              57264,
+              37569,
+              36542,
+              4397,
+              31875,
+              60398,
+              34098,
+              7388,
+              11420,
+              4184,
+              44955,
+              1346,
+              16790,
+              53493,
+              44723,
+              19635,
+              53279,
+              61419,
+              15117,
+              4367,
+              19501,
+              5972,
+              36412,
+              22090,
+              40609,
+              8833,
+              60170,
+              15167,
+              24872,
+              34506,
+              26393,
+              5296,
+              33310,
+              49605,
+              22618,
+              21033,
+              21984,
+              18756,
+              431170,
+              431172,
+              431173,
+              431174,
+              431178,
+              431176,
+              51219,
+              13232,
+              9567,
+              55230,
+              12128,
+              44184,
+              63447,
+              39841,
+              36678,
+              7444,
+              63398,
+              36452,
+              46842,
+              16123,
+              64210,
+              5743,
+              9386,
+              14057,
+              6764,
+              19919,
+              55743,
+              6967,
+              38921,
+              58402,
+              17735,
+              49254,
+              15365,
+              40927,
+              44799,
+              41472,
+              54694,
+              33435,
+              61308,
+              10575,
+              40508,
+              35958,
+              30393,
+              29199,
+              37999,
+              26196,
+              34171,
+              11730,
+              34173,
+              58218,
+              32241,
+              5935,
+              25831,
+              21974,
+              32932,
+              20987,
+              52502,
+              7960,
+              43989,
+              834898,
+              834900,
+              55706,
+              1022371,
+              1022374,
+              1022377,
+              834906,
+              834904,
+              13201,
+              342291,
+              342294,
+              342297,
+              12888,
+              16954,
+              12783,
+              9261,
+              14936,
+              21958,
+              12125,
+              56158,
+              20528,
+              50826,
+              18174,
+              13862,
+              37114,
+              61259,
+              19595,
+              57197,
+              54279,
+              56461,
+              58998,
+              27038,
+              36634
+            ],
+            "masteries": {
+              "12125": 1,
+              "13862": 5,
+              "16123": 0,
+              "26393": 0,
+              "30393": 4,
+              "32241": 5,
+              "38921": 1,
+              "55230": 0,
+              "60170": 2
+            },
+            "jewels": {
+              "7960": 422,
+              "21984": 423,
+              "26196": 424,
+              "36634": 425,
+              "61419": 426,
+              "342294": 427,
+              "431172": 428,
+              "431176": 429,
+              "834900": 430,
+              "834904": 431,
+              "1022374": 432
+            },
+            "tattoos": {
+              "4367": "Hinekora3",
+              "5296": "Hinekora3",
+              "6764": "Hinekora1",
+              "7444": "Hinekora1",
+              "10575": "Hinekora1",
+              "15117": "Hinekora3",
+              "17735": "Hinekora1",
+              "19501": "Hinekora3",
+              "19635": "Hinekora1",
+              "26270": "Hinekora1",
+              "26393": "runegraft_2",
+              "29199": "Hinekora1",
+              "32241": "runegraft_31",
+              "33310": "Hinekora3",
+              "34171": "Ngamahu1",
+              "36678": "Hinekora1",
+              "37999": "Hinekora1",
+              "39841": "Hinekora1",
+              "44184": "Hinekora1",
+              "53279": "Hinekora1",
+              "58402": "Hinekora1",
+              "60472": "Ngamahu1",
+              "63447": "Hinekora1",
+              "64210": "Hinekora1"
+            },
+            "notes": []
+          },
+          {
+            "name": "CI Svalinn",
+            "version": 3290,
+            "history": [
+              57226,
+              59650,
+              19374,
+              6949,
+              55643,
+              27929,
+              38900,
+              21075,
+              15711,
+              38805,
+              19635,
+              53279,
+              61419,
+              15117,
+              4367,
+              19501,
+              36107,
+              51213,
+              38246,
+              39836,
+              5972,
+              36412,
+              22090,
+              40609,
+              8833,
+              60170,
+              15167,
+              24872,
+              34506,
+              26393,
+              5296,
+              33310,
+              49605,
+              60440,
+              36858,
+              53456,
+              24426,
+              18182,
+              60259,
+              32176,
+              1215,
+              56295,
+              27656,
+              61834,
+              25411,
+              11455,
+              22618,
+              21033,
+              21984,
+              18756,
+              431170,
+              431172,
+              431178,
+              431176,
+              12128,
+              44184,
+              63447,
+              39841,
+              36678,
+              42760,
+              40366,
+              6764,
+              19919,
+              55743,
+              6967,
+              38921,
+              58402,
+              10575,
+              40508,
+              35958,
+              30393,
+              29199,
+              37999,
+              26196,
+              34171,
+              11730,
+              34173,
+              7444,
+              63398,
+              36452,
+              46842,
+              16123,
+              63425,
+              20987,
+              52502,
+              7960,
+              43989,
+              834898,
+              834900,
+              55706,
+              1022371,
+              1022374,
+              1022377,
+              834906,
+              834904,
+              13201,
+              342291,
+              342294,
+              342297,
+              834903,
+              834902,
+              12888,
+              16954,
+              12783,
+              9261,
+              58210,
+              62970,
+              46904,
+              27733,
+              56158,
+              20528,
+              50826,
+              18174,
+              8948,
+              27659,
+              37671,
+              48778,
+              41263,
+              31703,
+              10511,
+              9788,
+              39743,
+              18865,
+              54279,
+              56461,
+              37114,
+              61259,
+              58998,
+              27038,
+              19595,
+              57197
+            ],
+            "masteries": {
+              "1215": 0,
+              "16123": 0,
+              "26393": 4,
+              "27733": 1,
+              "30393": 4,
+              "38921": 1,
+              "39836": 5,
+              "60170": 2
+            },
+            "jewels": {
+              "7960": 433,
+              "21984": 434,
+              "26196": 435,
+              "36634": 436,
+              "41263": 437,
+              "61419": 438,
+              "61834": 439,
+              "342294": 440,
+              "431172": 441,
+              "431176": 442,
+              "834900": 443,
+              "834904": 444,
+              "1022374": 2
+            },
+            "tattoos": {
+              "1215": "runegraft_15",
+              "4367": "Hinekora1",
+              "5296": "Hinekora1",
+              "6764": "Hinekora1",
+              "10575": "Hinekora1",
+              "12125": "runegraft_2",
+              "15064": "Ngamahu1",
+              "15117": "Hinekora1",
+              "17735": "Hinekora1",
+              "18182": "Hinekora3",
+              "19501": "Hinekora1",
+              "19635": "Hinekora1",
+              "23027": "Ngamahu1",
+              "26270": "Hinekora1",
+              "26393": "runegraft_2",
+              "27656": "Hinekora3",
+              "29199": "Hinekora1",
+              "33310": "Hinekora1",
+              "34171": "Valako4",
+              "36678": "Hinekora1",
+              "36858": "Hinekora3",
+              "37999": "Hinekora1",
+              "39836": "runegraft_31",
+              "39841": "Hinekora1",
+              "40366": "Hinekora1",
+              "41415": "runegraft_6",
+              "42760": "Hinekora1",
+              "44184": "Hinekora1",
+              "49605": "Hinekora1",
+              "53279": "Hinekora1",
+              "53456": "Hinekora3",
+              "56295": "Hinekora3",
+              "58402": "Hinekora1",
+              "60440": "Hinekora1",
+              "60472": "Ngamahu1",
+              "63447": "Hinekora1",
+              "64210": "Hinekora1"
+            },
+            "notes": []
+          }
+        ],
+        "active": 1
+      },
+      "ascendancy": "Elementalist",
+      "bandits": "alira",
+      "pantheon": {
+        "TheBrineKing": [
+          true,
+          true,
+          true
+        ],
+        "Abberath": [
+          true
+        ]
+      },
+      "skillRotations": [
+        {
+          "name": "Main",
+          "html": "",
+          "gems": [
+            [
+              "Frostbite"
+            ],
+            [
+              "WinterOrb"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Aspirational PC Stack",
+      "level": 64,
+      "equipment": [
+        {
+          "slot": "Flask1",
+          "id": 930
+        },
+        {
+          "slot": "Flask2",
+          "id": 931
+        },
+        {
+          "slot": "Weapon",
+          "id": 932
+        },
+        {
+          "slot": "Amulet",
+          "id": 933
+        },
+        {
+          "slot": "Offhand",
+          "id": 934
+        },
+        {
+          "slot": "BodyArmour",
+          "id": 935
+        },
+        {
+          "slot": "Boots",
+          "id": 936
+        },
+        {
+          "slot": "Ring",
+          "id": 937
+        },
+        {
+          "slot": "Belt",
+          "id": 938
+        },
+        {
+          "slot": "Flask3",
+          "id": 939
+        },
+        {
+          "slot": "Flask4",
+          "id": 940
+        },
+        {
+          "slot": "Flask5",
+          "id": 941
+        },
+        {
+          "slot": "Helm",
+          "id": 942
+        },
+        {
+          "slot": "Gloves",
+          "id": 943
+        },
+        {
+          "slot": "Ring2",
+          "id": 944
+        },
+        {
+          "slot": "Jewel1",
+          "id": 181
+        }
+      ],
+      "equipmentVariants": [
+        {
+          "name": "Aspirational PC Stacking",
+          "items": [
+            {
+              "slot": "Flask1",
+              "id": 930
+            },
+            {
+              "slot": "Flask2",
+              "id": 931
+            },
+            {
+              "slot": "Weapon",
+              "id": 932
+            },
+            {
+              "slot": "Amulet",
+              "id": 933
+            },
+            {
+              "slot": "Offhand",
+              "id": 934
+            },
+            {
+              "slot": "BodyArmour",
+              "id": 935
+            },
+            {
+              "slot": "Boots",
+              "id": 936
+            },
+            {
+              "slot": "Ring",
+              "id": 937
+            },
+            {
+              "slot": "Belt",
+              "id": 938
+            },
+            {
+              "slot": "Flask3",
+              "id": 939
+            },
+            {
+              "slot": "Flask4",
+              "id": 940
+            },
+            {
+              "slot": "Flask5",
+              "id": 941
+            },
+            {
+              "slot": "Helm",
+              "id": 942
+            },
+            {
+              "slot": "Gloves",
+              "id": 943
+            },
+            {
+              "slot": "Ring2",
+              "id": 944
+            },
+            {
+              "slot": "Jewel1",
+              "id": 181
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "slot": "BodyArmour",
+          "gems": [
+            "WinterOrb",
+            "SupportPowerChargeOnCritical",
+            "SupportFocusedChannelling",
+            "SupportArcaneSurge",
+            "SupportInvertTheRules",
+            "SupportIncreasedCriticalDamage"
+          ]
+        },
+        {
+          "slot": "Helm",
+          "gems": [
+            "Discipline",
+            "ArcticArmour",
+            "SupportEnlighten",
+            "TempestShield"
+          ]
+        },
+        {
+          "slot": "Weapon",
+          "gems": [
+            "Frostblink",
+            "SupportArcaneSurge",
+            "Punishment"
+          ]
+        },
+        {
+          "slot": "Gloves",
+          "gems": [
+            "ShieldCharge",
+            "SupportFasterAttacks",
+            "SnipersMark"
+          ]
+        },
+        {
+          "slot": "Offhand",
+          "gems": [
+            "HeraldOfIce",
+            "SupportScornfulHerald",
+            "SupportIncreasedCriticalDamage"
+          ]
+        },
+        {
+          "slot": "Boots",
+          "gems": [
+            "SummonLightningGolem",
+            "SummonFlameGolem",
+            "SummonIceGolem",
+            "SummonStoneGolemAltY"
+          ]
+        }
+      ],
+      "passives": {
+        "variants": [
+          {
+            "name": "Aspirational PC Stacking",
+            "version": 3290,
+            "history": [
+              57264,
+              37569,
+              36542,
+              4397,
+              31875,
+              60398,
+              34098,
+              7388,
+              36634,
+              46340,
+              42760,
+              36678,
+              39841,
+              63447,
+              33864,
+              23659,
+              50029,
+              27307,
+              44184,
+              4367,
+              15117,
+              61419,
+              19501,
+              5972,
+              36412,
+              22090,
+              40609,
+              8833,
+              15167,
+              24872,
+              34506,
+              26393,
+              5296,
+              33310,
+              49605,
+              60440,
+              30767,
+              3359,
+              6250,
+              22535,
+              36858,
+              61653,
+              18769,
+              857,
+              53456,
+              24426,
+              18182,
+              60259,
+              32176,
+              1215,
+              56295,
+              27656,
+              61834,
+              25411,
+              11455,
+              22618,
+              21033,
+              21984,
+              18756,
+              431170,
+              431172,
+              431178,
+              431176,
+              53290,
+              40483,
+              62849,
+              12128,
+              56158,
+              20528,
+              29781,
+              24362,
+              53188,
+              12888,
+              16954,
+              12783,
+              9261,
+              34723,
+              7444,
+              63398,
+              36452,
+              46842,
+              16123,
+              64210,
+              26270,
+              60472,
+              34171,
+              26196,
+              37999,
+              40766,
+              11730,
+              34173,
+              29061,
+              55993,
+              41251,
+              13164,
+              44298,
+              46897,
+              35958,
+              30393,
+              63425,
+              20987,
+              52502,
+              7960,
+              43989,
+              834898,
+              834900,
+              55706,
+              1022371,
+              1022374,
+              1022377,
+              834906,
+              834904,
+              13201,
+              342291,
+              342294,
+              342297,
+              11420,
+              4184,
+              44955,
+              34661,
+              53802,
+              52742,
+              21330,
+              32417,
+              27096,
+              43242,
+              47630,
+              48124,
+              37492,
+              6728,
+              62504
+            ],
+            "masteries": {
+              "857": 0,
+              "1215": 0,
+              "16123": 0,
+              "26393": 2,
+              "27307": 3,
+              "30393": 1,
+              "34723": 4,
+              "44298": 3,
+              "53188": 5
+            },
+            "jewels": {
+              "7960": 963,
+              "21984": 964,
+              "26196": 965,
+              "36634": 966,
+              "61419": 967,
+              "61834": 968,
+              "342294": 969,
+              "431172": 970,
+              "431176": 971,
+              "834900": 972,
+              "834904": 973,
+              "1022374": 974
+            },
+            "tattoos": {
+              "857": "runegraft_6",
+              "1215": "runegraft_15",
+              "4367": "Hinekora1",
+              "5296": "Hinekora1",
+              "7444": "Hinekora1",
+              "15117": "Hinekora1",
+              "18182": "Hinekora3",
+              "19501": "Hinekora1",
+              "26270": "Hinekora1",
+              "26393": "runegraft_2",
+              "27656": "Hinekora3",
+              "33310": "Hinekora1",
+              "34171": "Tukohama1",
+              "36678": "Hinekora1",
+              "36858": "Hinekora3",
+              "37999": "Hinekora1",
+              "39841": "Hinekora1",
+              "42760": "Hinekora1",
+              "44184": "Hinekora1",
+              "49605": "Hinekora1",
+              "53456": "Hinekora3",
+              "56295": "Hinekora3",
+              "60440": "Hinekora3",
+              "60472": "Tukohama1",
+              "63447": "Hinekora1",
+              "64210": "Hinekora1"
+            },
+            "notes": []
+          }
+        ],
+        "active": 0
+      },
+      "ascendancy": "Occultist",
+      "bandits": "alira",
+      "pantheon": {
+        "TheBrineKing": [
+          true,
+          true,
+          true
+        ],
+        "Abberath": [
+          true
+        ]
+      },
+      "skillRotations": [
+        {
+          "name": "Main",
+          "html": "",
+          "gems": [
+            [
+              "WinterOrb"
+            ],
+            [
+              "SnipersMark",
+              "Punishment"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "widgetNotes": {
+    "skills": "<ul><li>If you are starting in a fresh league, it's highly recommended to make a Ranger mule to get a free Momentum Support and a couple Scroll of Wisdom. </li><li>Kinetic Bolt is available at level 1 and is your main Skill for the first 12 levels.</li><li>When you first enter Lioneye's Watch Town, remember to buy Prismatic Burst Support from Nessa.</li><li>Keep Arcane Surge Support you collect for the gem chest in Coast it at level 1. It's substantially harder to sustain as it requires more mana to provide the buff. You want to proc the buff with a single cast.</li><li>Support Kinetic Bolt with Prismatic Burst Support and Momentum Support. Replace Momentum Support with Volley Support at level 4.</li><li>After defeating Hailrake, buy Holy Flame Totem and Flame Wall to supplement your damage. At level 8, add Combustion Support to the Totem. Consider also switching Prismatic Burst Support with Added Lightning Damage Support.</li><li>After killing Brutus, add Clarity.</li><li>Use Shield Charge to move around quickly. Buy Faster Attacks Support from the vendor to make it even faster.</li><li>After completing \"The Siren's Cadence\" quest, take Creeping Frost as a quest reward. Buy Wintertide Brand, 2x Arcane Surge Support and Infused Channelling Support for later Winter Orb swap.</li><li>After completing \"Intruders in Black\", add Summon Skitterbots  and Cold Snap. Buy Herald of Ice  and level it in your off-hand Weapon. Discard your Holy Flame Totem setup.</li><li>After completing \"The Root of the Problem\", take Controlled Destruction Support as the quest reward and buy another Controlled Destruction Support.</li><li>In Act 3, add Frostbite. Cast it on tankier targets.</li><li>Kill General Gravicious to acquire Winter Orb. It's not offered as the quest reward, you will need an Orb of Chance to buy it from the vendor. </li><li>After you reach level 31, you want to complete the Library, which grants you access to a gem vendor. Buy the following gems from Siosa: Hypothermia Support, Ice Bite Support, Assassin's Mark and Haste. Swap from the Cold DoT leveling setup to Winter Orb .</li><li>If you don't have enough Dexterity to use Haste, you can craft it for 1Orb of Augmentation</li><li>Supporting Herald of Ice with Ice Bite Support provides Frenzy Charge generation while clearing.</li><li>After completing \"Breaking the Seal\", you get access to Golem Skill Gems. Get Summon Lightning Golem first as it trivializes early Mana sustain. Then Summon Flame Golem for offensive stats and lastly Summon Ice Golem or Summon Stone Golem.</li><li>Around level 60, after respecing Elemental Overload, replace Haste with Zealotry and cast Assassin's Mark on tanky rares and bosses.</li></ul>",
+    "skillRotations": "<ul><li>While fighting Rare or Unique monsters, use Holy Flame Totem and Flame Wall to supplement your damage. Place Flame Wall so that your character and totems are opposite your target so that you both benefit.</li><li>Winter Orb fires more Projectiles when channeling. Keep channeling on tanky Rares and Bosses to increase your single target damage.</li><li>You can reposition with Frostblink without interrupting the Winter Orb channel.</li></ul>",
+    "equipment": "<ul><li>During the entire campaign , try to keep your Elemental Resistances as high as possible. You can craft Elemental Resistance on rings and armour for 1 Orb of Transmutation.</li><li>For a spellcaster, the Wand is the most important damage slot. Look for affixes like +1 Level to all Cold Spell Skill Gems, Flat Elemental Damage to Spells, Spell Damage and Cast Speed. It's worth checking Nessa's vendor inventory in Act 1 as the +1 Gem Level affix on Wands has a very low Item Level requirement.</li><li>If you get unlucky with Movement Speed on your boots early, you can consider using a vendor recipie. Vendoring boots with a Quicksilver Flask and Orb of Augmentation provides 10% Increased Movement Speed affix on a white base or upgrade a magic item by 5%. This recipe retains the sockets and the item's base.</li><li>Use pure Evasion shield if possible as it provides  a sizable amount of movement speed. Bases with 6% or 9% Increased Movement Speed are preferable.</li><li>Try to gamble for a shield early  because you won't be able to fulfill the Dexterity requirement later on. Ideal level brackets are 16-22 for  Painted Buckler and 29-33 for  War Buckler.</li><li>When gambling for armour, focus on hybrid Energy Shield/Evasion and Energy Shield/Armour.</li></ul><ul><li> In the Act 4 Crystal Ruins zone, there is a Crafting Recipe for added Cold Damage to Spells. Craft it on your Wand with an open prefix for a significant damage boost.</li><li>Great leveling uniques to pick up early are: Kikazaru, Victario's Acuity, Berek's Grip.</li></ul>",
+    "passives": "<ul><li>The build is low on Dexterity and Strength. Pick up Might,Agility,Alacrity,Physique if necessary.</li><li>Rush Bitter Frost Keystone early on to incrase your damage significantly. Remember that it prevents dealing non-Cold damage.</li><li>Freeze Chance is important for Herald of Ice explosions. Make sure to pick upWinter's Embrace andBreath of Rime early on.</li><li>Around level 60 after picking up Critical Strike Chance and Power Charge notables like Disciple of the Forbidden,Instability,Annihilation and remove  Elemental Overload. It's more efficient to utilize Critical Strike Multiplier at this point.</li><li>Whispers of Doom allows you to cast Assassin's Mark. It helps to cap your Critical Strike Chance and greatly increases boss damage during early Atlas progression. When your gear gets better, it can be dropped.</li><li>Passive respec gold costs are very cheap during campain. Use gold instead of side quest respec points to do so.</li></ul>",
+    "ascendancy": "<ul><li> Liege of the Primordial combined with the  Golem Commander Notable allows you to summon up to 4 Golems that re-summon if they are slain. Golems provide you with powerful buffs and this Ascendancy allows you to fully rely on them.</li><li>Shaper of Storms makes even your smallest hits apply Shock. The base 25% Shock is very easy to scale with \"Increased Effect of Non-Damaging Ailments\" provided by Notable Passives like Elemental Focus or Critical Mastery to cap the Shock Effect on enemies.</li><li> Mastermind of Discord buffs the potency of Exposure you apply to Enemies and grants sizable amount of Mana Regeneration. Even early on, the uptime of Exposure is very reliable due to the frequency of projectiles fired by Winter Orb and \"10% Chance to Inflict Cold Exposure\"  Cold Mastery.</li><li> Heart of Destruction provides Global Area of Effect while clearing which is very important for both Winter Orb and Herald of Ice. When you hit a Unique Enemy, it provides 30% more damage which makes it very flexible for both clear and single target.</li></ul>",
+    "genesis": ""
+  }
+}

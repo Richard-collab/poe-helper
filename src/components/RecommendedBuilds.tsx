@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from "react";
-import { recommendedBuilds } from "../data/builds";
+import { useEffect, useMemo, useRef, useState } from "react";
+import buildData from "../data/maxroll-build.json";
 
 interface RecommendedBuildsProps {
   isOpen: boolean;
@@ -7,17 +7,58 @@ interface RecommendedBuildsProps {
 }
 
 const SECTIONS = [
-  { id: "overview", label: "概述" },
-  { id: "pros-cons", label: "优劣" },
-  { id: "gear", label: "装备" },
-  { id: "skills", label: "技能" },
-  { id: "tree", label: "天赋" },
-  { id: "progression", label: "开荒路线" },
+  { id: "introduction", label: "Introduction" },
+  { id: "equipment", label: "Equipment" },
+  { id: "skills", label: "Skills" },
+  { id: "rotation", label: "Rotation" },
+  { id: "passive-skill-tree", label: "Passive Skill Tree" },
+  { id: "ascendancy", label: "Ascendancy" },
+  { id: "pantheon-and-bandits", label: "Pantheon and Bandits" },
+  { id: "path-of-building", label: "Path of Building" },
 ];
+
+function sectionId(id: string) {
+  return `section-${id}`;
+}
+
+function Html({ html }: { html: string }) {
+  if (!html) return null;
+  return (
+    <div
+      className="guide-html"
+      dangerouslySetInnerHTML={{ __html: html }}
+    />
+  );
+}
+
+function GemList({ gems }: { gems: string[] }) {
+  if (!gems?.length) return null;
+  return (
+    <div className="gem-list">
+      {gems.map((gem) => (
+        <span key={gem} className="gem-tag">
+          {gem}
+        </span>
+      ))}
+    </div>
+  );
+}
+
+function SkillGroup({ group }: { group: any }) {
+  return (
+    <div className="skill-group">
+      <span className="skill-slot">{group.slot || "Main"}</span>
+      <GemList gems={group.gems || []} />
+    </div>
+  );
+}
 
 export function RecommendedBuilds({ isOpen, onClose }: RecommendedBuildsProps) {
   const panelRef = useRef<HTMLDivElement>(null);
-  const [activeSection, setActiveSection] = useState("overview");
+  const [activeSection, setActiveSection] = useState(SECTIONS[0].id);
+  const [activeProfile, setActiveProfile] = useState(0);
+
+  const profile = buildData.profiles[activeProfile];
 
   useEffect(() => {
     if (!isOpen) return;
@@ -41,7 +82,7 @@ export function RecommendedBuilds({ isOpen, onClose }: RecommendedBuildsProps) {
       const scrollTop = panel.scrollTop;
       let current = SECTIONS[0].id;
       for (const section of SECTIONS) {
-        const el = document.getElementById(`section-${section.id}`);
+        const el = document.getElementById(sectionId(section.id));
         if (el && el.offsetTop - 120 <= scrollTop) {
           current = section.id;
         }
@@ -55,16 +96,26 @@ export function RecommendedBuilds({ isOpen, onClose }: RecommendedBuildsProps) {
 
   const scrollTo = (id: string) => {
     const panel = panelRef.current;
-    const el = document.getElementById(`section-${id}`);
+    const el = document.getElementById(sectionId(id));
     if (panel && el) {
       panel.scrollTo({ top: el.offsetTop - 24, behavior: "smooth" });
     }
   };
 
-  if (!isOpen) return null;
+  const pantheonMajor = useMemo(() => {
+    const p = profile?.pantheon || {};
+    const keys = Object.keys(p);
+    if (!keys.length) return null;
+    return keys[0];
+  }, [profile]);
 
-  const build = recommendedBuilds[0];
-  if (!build) return null;
+  const pantheonMinor = useMemo(() => {
+    const p = profile?.pantheon || {};
+    const keys = Object.keys(p);
+    return keys[1] || null;
+  }, [profile]);
+
+  if (!isOpen) return null;
 
   return (
     <div className="modal-backdrop" onClick={onClose}>
@@ -81,6 +132,17 @@ export function RecommendedBuilds({ isOpen, onClose }: RecommendedBuildsProps) {
               POE · 国际服助手
             </a>
           </div>
+
+          <div className="guide-meta-side">
+            <div className="guide-author">by {buildData.author}</div>
+            <div className="guide-date">{buildData.date}</div>
+            <div className="guide-tags-side">
+              {buildData.tags.map((tag) => (
+                <span key={tag}>{tag}</span>
+              ))}
+            </div>
+          </div>
+
           <nav className="guide-nav">
             {SECTIONS.map((s) => (
               <button
@@ -92,13 +154,14 @@ export function RecommendedBuilds({ isOpen, onClose }: RecommendedBuildsProps) {
               </button>
             ))}
           </nav>
+
           <a
-            href={build.links[0].href}
+            href={buildData.plannerLink}
             target="_blank"
             rel="noopener noreferrer"
             className="guide-external"
           >
-            查看 Maxroll 原文
+            Open in Maxroll Planner
             <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.5">
               <path d="M7 17L17 7M17 7H8M17 7v9" />
             </svg>
@@ -106,78 +169,66 @@ export function RecommendedBuilds({ isOpen, onClose }: RecommendedBuildsProps) {
         </div>
 
         <div className="guide-content" ref={panelRef}>
-          <button className="guide-close" onClick={onClose} aria-label="关闭">
+          <button className="guide-close" onClick={onClose} aria-label="Close">
             ×
           </button>
 
-          <header className="guide-hero">
-            <div className="guide-tags">
-              {build.tags.map((tag) => (
-                <span key={tag} className="guide-tag">
-                  {tag}
-                </span>
-              ))}
-              <span className={`guide-pill budget-${build.budget}`}>{build.budget}</span>
-              <span className={`guide-pill difficulty-${build.difficulty}`}>
-                {build.difficulty}
-              </span>
+          <header
+            className="guide-hero"
+            style={{
+              backgroundImage: `linear-gradient(to bottom, rgba(18, 17, 16, 0.45), rgba(18, 17, 16, 0.95)), url(${buildData.featuredImage})`,
+            }}
+          >
+            <div className="guide-hero-inner">
+              <div className="guide-category">{buildData.category}</div>
+              <h1 id="guide-title">{buildData.title}</h1>
+              <div className="guide-meta-row">
+                <span>by {buildData.author}</span>
+                <span>·</span>
+                <span>{buildData.date}</span>
+                <span>·</span>
+                <span>{buildData.tags.join(", ")}</span>
+              </div>
             </div>
-            <h1 id="guide-title">{build.name}</h1>
-            <p className="guide-subtitle">{build.nameEn}</p>
-            <p className="guide-meta">
-              {build.ascendancy} · {build.coreSkill}
-            </p>
-            <p className="guide-summary">{build.summary}</p>
           </header>
 
-          <section id="section-overview" className="guide-section">
-            <h2>概述</h2>
-            <div className="guide-body">
-              {build.overview.map((p, i) => (
-                <p key={i}>{p}</p>
-              ))}
-            </div>
+          <section id={sectionId("introduction")} className="guide-section">
+            <h2>Introduction</h2>
+            <p className="guide-lead">
+              This is a local mirror of the Maxroll build guide. Use the
+              sidebar to navigate sections, or click the tabs below to compare
+              different progression stages.
+            </p>
           </section>
 
-          <section id="section-pros-cons" className="guide-section">
-            <h2>优势与劣势</h2>
-            <div className="guide-pros-cons">
-              <div>
-                <h3>优势</h3>
-                <ul>
-                  {build.pros.map((pro, i) => (
-                    <li key={i}>{pro}</li>
-                  ))}
-                </ul>
-              </div>
-              <div>
-                <h3>劣势</h3>
-                <ul>
-                  {build.cons.map((con, i) => (
-                    <li key={i}>{con}</li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </section>
+          <div className="profile-tabs">
+            {buildData.profiles.map((p, idx) => (
+              <button
+                key={p.name}
+                className={activeProfile === idx ? "active" : ""}
+                onClick={() => setActiveProfile(idx)}
+              >
+                {p.name}
+              </button>
+            ))}
+          </div>
 
-          <section id="section-gear" className="guide-section">
-            <h2>装备</h2>
-            <div className="guide-table-wrap">
+          <section id={sectionId("equipment")} className="guide-section">
+            <h2>Equipment · {profile.name}</h2>
+            <Html html={buildData.widgetNotes.equipment} />
+            <div className="guide-table-wrap mt-6">
               <table className="guide-table">
                 <thead>
                   <tr>
-                    <th>部位</th>
-                    <th>装备</th>
-                    <th>说明</th>
+                    <th>Slot</th>
+                    <th>Item</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {build.gear.map((item, i) => (
+                  {profile.equipment.map((item: any, i: number) => (
                     <tr key={i}>
                       <td>{item.slot}</td>
-                      <td>{item.name}</td>
-                      <td>{item.note}</td>
+                      <td>{item.id}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -185,80 +236,117 @@ export function RecommendedBuilds({ isOpen, onClose }: RecommendedBuildsProps) {
             </div>
           </section>
 
-          <section id="section-skills" className="guide-section">
-            <h2>技能连接</h2>
-            <div className="guide-skills">
-              {build.skills.map((skill, i) => (
-                <div key={i} className="skill-card">
-                  <h3>{skill.name}</h3>
-                  <div className="skill-gems">
-                    {skill.gems.map((gem) => (
-                      <span key={gem} className="skill-gem">
-                        {gem}
-                      </span>
-                    ))}
-                  </div>
-                  {skill.note && <p>{skill.note}</p>}
-                </div>
+          <section id={sectionId("skills")} className="guide-section">
+            <h2>Skills · {profile.name}</h2>
+            <Html html={buildData.widgetNotes.skills} />
+            <div className="guide-skills mt-6">
+              {profile.skills.map((group: any, i: number) => (
+                <SkillGroup key={i} group={group} />
               ))}
             </div>
           </section>
 
-          <section id="section-tree" className="guide-section">
-            <h2>天赋、升华与万神殿</h2>
+          <section id={sectionId("rotation")} className="guide-section">
+            <h2>Rotation</h2>
+            <Html html={buildData.widgetNotes.skillRotations} />
+            {profile.skillRotations?.map((rotation: any, i: number) => (
+              <div key={i} className="rotation-card">
+                <h3>{rotation.name}</h3>
+                <Html html={rotation.html} />
+              </div>
+            ))}
+          </section>
+
+          <section id={sectionId("passive-skill-tree")} className="guide-section">
+            <h2>Passive Skill Tree · {profile.name}</h2>
+            <Html html={buildData.widgetNotes.passives} />
+            <div className="guide-placeholder">
+              Passive tree data is available in the Maxroll Planner:
+              <br />
+              <a
+                href={buildData.plannerLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {buildData.plannerLink}
+              </a>
+            </div>
+          </section>
+
+          <section id={sectionId("ascendancy")} className="guide-section">
+            <h2>Ascendancy</h2>
+            <Html html={buildData.widgetNotes.ascendancy} />
+            <div className="guide-tree mt-6">
+              <div>
+                <h3>Class</h3>
+                <p>{profile.ascendancy}</p>
+              </div>
+            </div>
+          </section>
+
+          <section id={sectionId("pantheon-and-bandits")} className="guide-section">
+            <h2>Pantheon and Bandits</h2>
             <div className="guide-tree">
               <div>
-                <h3>升华顺序</h3>
-                <ol>
-                  {build.ascendancyOrder.map((node, i) => (
-                    <li key={i}>{node}</li>
-                  ))}
-                </ol>
+                <h3>Major God</h3>
+                <p>{pantheonMajor || "—"}</p>
               </div>
               <div>
-                <h3>万神殿</h3>
-                <p>
-                  <strong>主神：</strong>
-                  {build.pantheon.major}
-                </p>
-                <p>
-                  <strong>小神：</strong>
-                  {build.pantheon.minor}
-                </p>
+                <h3>Minor God</h3>
+                <p>{pantheonMinor || "—"}</p>
               </div>
               <div>
-                <h3>盗贼任务</h3>
-                <p>{build.bandit}</p>
-              </div>
-              <div>
-                <h3>天赋树</h3>
-                <p className="guide-placeholder">{build.treeUrl}</p>
+                <h3>Bandits</h3>
+                <p>{profile.bandits}</p>
               </div>
             </div>
           </section>
 
-          <section id="section-progression" className="guide-section">
-            <h2>开荒路线</h2>
-            <div className="guide-timeline">
-              {build.levelProgression.map((step, i) => (
-                <div key={i} className="timeline-item">
-                  <span className="timeline-dot" />
-                  <div>
-                    <h3>{step.level}</h3>
-                    <p>{step.note}</p>
-                  </div>
-                </div>
-              ))}
+          <section id={sectionId("path-of-building")} className="guide-section">
+            <h2>Path of Building</h2>
+            <p className="guide-body">
+              The full planner profile is available on Maxroll. You can also
+              check the official Path of Building Community fork for the latest
+              import.
+            </p>
+            <div className="guide-links">
+              <a
+                href={buildData.plannerLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="guide-link"
+              >
+                Open Maxroll Planner
+                <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.5">
+                  <path d="M7 17L17 7M17 7H8M17 7v9" />
+                </svg>
+              </a>
+              <a
+                href="https://pathofbuilding.community/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="guide-link"
+              >
+                Path of Building
+                <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.5">
+                  <path d="M7 17L17 7M17 7H8M17 7v9" />
+                </svg>
+              </a>
             </div>
           </section>
 
           <footer className="guide-footer">
             <p>
-              内容基于 Maxroll 指南整理，具体数值与赛季版本请以{" "}
-              <a href={build.links[0].href} target="_blank" rel="noopener noreferrer">
-                Maxroll 原文
-              </a>{" "}
-              为准。
+              Content mirrored from{" "}
+              <a
+                href={`https://maxroll.gg/poe/build-guides/${buildData.slug}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Maxroll
+              </a>
+              . All game terminology and descriptions are kept in their original
+              form.
             </p>
           </footer>
         </div>

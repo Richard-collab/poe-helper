@@ -523,18 +523,68 @@
   }
 
   .guide-hero {
-    @apply pb-10 mb-10 border-b;
-    border-color: rgba(161, 127, 84, 0.28);
+    @apply relative flex items-end mb-10 -mx-6 -mt-10 md:-mx-12 md:-mt-12 pb-10 px-6 md:px-12 min-h-[340px];
+    background-size: cover;
+    background-position: center top;
+  }
+
+  .guide-hero-inner {
+    @apply relative z-10 pt-24;
+  }
+
+  .guide-category {
+    @apply inline-block text-[11px] uppercase px-3 py-1;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.24em;
+    color: var(--gold);
+    background: rgba(252, 199, 54, 0.1);
+    border: 1px solid rgba(252, 199, 54, 0.22);
   }
 
   .guide-hero h1 {
     font-family: 'Noto Serif SC', serif;
     font-weight: 900;
-    font-size: clamp(30px, 4vw, 44px);
-    letter-spacing: 0.06em;
-    line-height: 1.2;
+    font-size: clamp(32px, 5vw, 54px);
+    letter-spacing: 0.05em;
+    line-height: 1.15;
     color: var(--text);
-    margin-top: 16px;
+    margin-top: 18px;
+    text-shadow: 0 2px 24px rgba(0, 0, 0, 0.6);
+  }
+
+  .guide-meta-row {
+    @apply mt-5 flex flex-wrap items-center gap-3 text-xs uppercase;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.14em;
+    color: var(--gold-pale);
+  }
+
+  .guide-meta-side {
+    @apply mb-8;
+  }
+
+  .guide-author {
+    @apply text-xs uppercase;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.16em;
+    color: var(--text);
+  }
+
+  .guide-date {
+    @apply mt-1 text-[11px];
+    color: var(--text-dim);
+  }
+
+  .guide-tags-side {
+    @apply flex flex-wrap gap-2 mt-3;
+  }
+
+  .guide-tags-side span {
+    @apply text-[9px] uppercase px-2 py-1;
+    color: var(--gold-pale);
+    background: rgba(252, 199, 54, 0.08);
+    border: 1px solid rgba(252, 199, 54, 0.18);
+    letter-spacing: 0.1em;
   }
 
   .guide-subtitle {
@@ -772,9 +822,121 @@
     color: var(--text-dim);
   }
 
-  .guide-footer {
-    @apply mt-16 pt-8 border-t;
+  .guide-html p,
+  .guide-html ul,
+  .guide-html ol {
+    @apply text-[14px] leading-relaxed;
+    color: var(--text-dim);
+  }
+
+  .guide-html p {
+    @apply mb-4;
+  }
+
+  .guide-html ul {
+    @apply list-disc pl-5 space-y-2 my-4;
+  }
+
+  .guide-html ol {
+    @apply list-decimal pl-5 space-y-2 my-4;
+  }
+
+  .guide-html li {
+    @apply text-[14px];
+    color: var(--text-dim);
+  }
+
+  .guide-html strong {
+    color: var(--gold-pale);
+    font-weight: 500;
+  }
+
+  .guide-html a {
+    color: var(--gold);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .guide-html a:hover {
+    color: var(--gold-pale);
+  }
+
+  .profile-tabs {
+    @apply flex flex-wrap gap-2 mb-10 pb-8 border-b;
     border-color: rgba(161, 127, 84, 0.28);
+  }
+
+  .profile-tabs button {
+    @apply px-4 py-2 text-xs uppercase cursor-pointer;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.12em;
+    color: var(--text-dim);
+    background: transparent;
+    border: 1px solid rgba(161, 127, 84, 0.25);
+    transition: color 0.25s, border-color 0.25s, background 0.25s;
+  }
+
+  .profile-tabs button:hover,
+  .profile-tabs button.active {
+    color: var(--gold);
+    border-color: var(--gold);
+    background: rgba(252, 199, 54, 0.08);
+  }
+
+  .gem-list {
+    @apply flex flex-wrap gap-2;
+  }
+
+  .gem-tag {
+    @apply text-[11px] px-2.5 py-1;
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(161, 127, 84, 0.25);
+  }
+
+  .skill-group {
+    @apply p-4;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(161, 127, 84, 0.18);
+  }
+
+  .skill-slot {
+    @apply block text-[10px] uppercase mb-3;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.16em;
+    color: var(--bronze);
+  }
+
+  .rotation-card {
+    @apply mt-4 p-4;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(161, 127, 84, 0.18);
+  }
+
+  .rotation-card h3 {
+    @apply mb-3;
+    color: var(--text);
+  }
+
+  .guide-lead {
+    @apply text-[15px] leading-relaxed;
+    color: var(--text-dim);
+  }
+
+  .guide-links {
+    @apply flex flex-wrap gap-3 mt-4;
+  }
+
+  .guide-placeholder {
+    @apply text-xs p-4 break-all;
+    color: var(--text-dim);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px dashed rgba(161, 127, 84, 0.25);
+  }
+
+  .guide-placeholder a {
+    color: var(--gold);
+    text-decoration: underline;
   }
 
   .guide-footer p {
