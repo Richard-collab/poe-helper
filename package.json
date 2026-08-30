@@ -12,6 +12,7 @@
     "update-meta": "bun run scripts/update-season-meta.ts"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
     "bun-plugin-tailwind": "^0.0.14",
     "react": "^19",
