@@ -1,7 +1,7 @@
 {
   "league": "Allflame",
   "type": "exp",
-  "updatedAt": "2026-09-13T03:41:50.797Z",
+  "updatedAt": "2026-09-14T03:50:34.814Z",
   "sourceUrl": "https://poe.ninja/poe1/builds/allflame",
   "notice": "Data is updated daily at 08:00 CST from poe.ninja's private builds search API and mirrored locally.",
   "ascendancy": {
@@ -9,25 +9,25 @@
     "items": [
       {
         "name": "Luminary",
-        "percentage": 22.55,
+        "percentage": 22.64,
         "rank": 1,
         "trend": "stable"
       },
       {
         "name": "Elementalist",
-        "percentage": 14.48,
+        "percentage": 14.46,
         "rank": 2,
         "trend": "stable"
       },
       {
         "name": "Occultist",
-        "percentage": 9.46,
+        "percentage": 9.44,
         "rank": 3,
         "trend": "stable"
       },
       {
         "name": "Necromancer",
-        "percentage": 7.51,
+        "percentage": 7.48,
         "rank": 4,
         "trend": "stable"
       },
@@ -39,13 +39,13 @@
       },
       {
         "name": "Juggernaut",
-        "percentage": 5.57,
+        "percentage": 5.56,
         "rank": 6,
         "trend": "stable"
       },
       {
         "name": "Slayer",
-        "percentage": 5.5,
+        "percentage": 5.48,
         "rank": 7,
         "trend": "stable"
       },
@@ -57,7 +57,7 @@
       },
       {
         "name": "Hierophant",
-        "percentage": 4.2,
+        "percentage": 4.19,
         "rank": 9,
         "trend": "stable"
       },
@@ -74,61 +74,61 @@
     "items": [
       {
         "name": "Winter Orb",
-        "percentage": 7.53,
+        "percentage": 7.52,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Righteous Fire",
-        "percentage": 4.66,
+        "percentage": 4.67,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Animate Guardian",
-        "percentage": 4.51,
+        "percentage": 4.52,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Raise Spectre",
-        "percentage": 4.01,
+        "percentage": 4,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Ethereal Knives",
-        "percentage": 3.2,
+        "percentage": 3.18,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Flicker Strike",
-        "percentage": 2.52,
+        "percentage": 2.51,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Penance Brand",
-        "percentage": 2.38,
+        "percentage": 2.37,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Cyclone of Tumult",
-        "percentage": 2.07,
+        "percentage": 2.06,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Kinetic Blast of Clustering",
-        "percentage": 1.92,
+        "percentage": 1.91,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Void Shockwave",
-        "percentage": 1.91,
+        "percentage": 1.9,
         "type": "Skill",
         "trend": "up"
       }
@@ -145,55 +145,55 @@
       },
       {
         "name": "Rare Jewel",
-        "percentage": 90.64,
+        "percentage": 90.59,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Gloves",
-        "percentage": 85.92,
+        "percentage": 85.93,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Boots",
-        "percentage": 71.33,
+        "percentage": 71.37,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Ring",
-        "percentage": 67.62,
+        "percentage": 67.65,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Helmet",
-        "percentage": 46.01,
+        "percentage": 45.99,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Watcher's Eye",
-        "percentage": 45.75,
+        "percentage": 45.67,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Body Armour",
-        "percentage": 43.3,
+        "percentage": 43.28,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "The Light of Meaning",
-        "percentage": 40.03,
+        "percentage": 39.97,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Mageblood",
-        "percentage": 34.08,
+        "percentage": 34.05,
         "type": "Item",
         "trend": "up"
       }
