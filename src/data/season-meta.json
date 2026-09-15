@@ -1,7 +1,7 @@
 {
   "league": "Allflame",
   "type": "exp",
-  "updatedAt": "2026-09-14T03:50:34.814Z",
+  "updatedAt": "2026-09-15T03:50:43.364Z",
   "sourceUrl": "https://poe.ninja/poe1/builds/allflame",
   "notice": "Data is updated daily at 08:00 CST from poe.ninja's private builds search API and mirrored locally.",
   "ascendancy": {
@@ -9,25 +9,25 @@
     "items": [
       {
         "name": "Luminary",
-        "percentage": 22.64,
+        "percentage": 22.72,
         "rank": 1,
         "trend": "stable"
       },
       {
         "name": "Elementalist",
-        "percentage": 14.46,
+        "percentage": 14.42,
         "rank": 2,
         "trend": "stable"
       },
       {
         "name": "Occultist",
-        "percentage": 9.44,
+        "percentage": 9.43,
         "rank": 3,
         "trend": "stable"
       },
       {
         "name": "Necromancer",
-        "percentage": 7.48,
+        "percentage": 7.47,
         "rank": 4,
         "trend": "stable"
       },
@@ -39,19 +39,19 @@
       },
       {
         "name": "Juggernaut",
-        "percentage": 5.56,
+        "percentage": 5.57,
         "rank": 6,
         "trend": "stable"
       },
       {
         "name": "Slayer",
-        "percentage": 5.48,
+        "percentage": 5.47,
         "rank": 7,
         "trend": "stable"
       },
       {
         "name": "Assassin",
-        "percentage": 5.45,
+        "percentage": 5.43,
         "rank": 8,
         "trend": "stable"
       },
@@ -63,7 +63,7 @@
       },
       {
         "name": "Deadeye",
-        "percentage": 3.66,
+        "percentage": 3.67,
         "rank": 10,
         "trend": "stable"
       }
@@ -80,7 +80,7 @@
       },
       {
         "name": "Righteous Fire",
-        "percentage": 4.67,
+        "percentage": 4.68,
         "type": "Skill",
         "trend": "up"
       },
@@ -98,37 +98,37 @@
       },
       {
         "name": "Ethereal Knives",
-        "percentage": 3.18,
+        "percentage": 3.16,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Flicker Strike",
-        "percentage": 2.51,
+        "percentage": 2.52,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Penance Brand",
-        "percentage": 2.37,
+        "percentage": 2.35,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Cyclone of Tumult",
-        "percentage": 2.06,
+        "percentage": 2.05,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Kinetic Blast of Clustering",
-        "percentage": 1.91,
+        "percentage": 1.9,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Void Shockwave",
-        "percentage": 1.9,
+        "percentage": 1.88,
         "type": "Skill",
         "trend": "up"
       }
@@ -145,13 +145,13 @@
       },
       {
         "name": "Rare Jewel",
-        "percentage": 90.59,
+        "percentage": 90.56,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Gloves",
-        "percentage": 85.93,
+        "percentage": 85.91,
         "type": "Item",
         "trend": "up"
       },
@@ -163,37 +163,37 @@
       },
       {
         "name": "Rare Ring",
-        "percentage": 67.65,
+        "percentage": 67.73,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Helmet",
-        "percentage": 45.99,
+        "percentage": 45.97,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Watcher's Eye",
-        "percentage": 45.67,
+        "percentage": 45.6,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Body Armour",
-        "percentage": 43.28,
+        "percentage": 43.27,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "The Light of Meaning",
-        "percentage": 39.97,
+        "percentage": 39.9,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Mageblood",
-        "percentage": 34.05,
+        "percentage": 33.99,
         "type": "Item",
         "trend": "up"
       }
