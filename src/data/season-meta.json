@@ -1,7 +1,7 @@
 {
   "league": "Allflame",
   "type": "exp",
-  "updatedAt": "2026-09-16T03:47:49.014Z",
+  "updatedAt": "2026-09-17T03:52:52.739Z",
   "sourceUrl": "https://poe.ninja/poe1/builds/allflame",
   "notice": "Data is updated daily at 08:00 CST from poe.ninja's private builds search API and mirrored locally.",
   "ascendancy": {
@@ -9,55 +9,55 @@
     "items": [
       {
         "name": "Luminary",
-        "percentage": 22.77,
+        "percentage": 22.86,
         "rank": 1,
         "trend": "stable"
       },
       {
         "name": "Elementalist",
-        "percentage": 14.4,
+        "percentage": 14.38,
         "rank": 2,
         "trend": "stable"
       },
       {
         "name": "Occultist",
-        "percentage": 9.4,
+        "percentage": 9.39,
         "rank": 3,
         "trend": "stable"
       },
       {
         "name": "Necromancer",
-        "percentage": 7.46,
+        "percentage": 7.45,
         "rank": 4,
         "trend": "stable"
       },
       {
         "name": "Chieftain",
-        "percentage": 6.77,
+        "percentage": 6.76,
         "rank": 5,
         "trend": "stable"
       },
       {
         "name": "Juggernaut",
-        "percentage": 5.56,
+        "percentage": 5.57,
         "rank": 6,
         "trend": "stable"
       },
       {
         "name": "Slayer",
-        "percentage": 5.47,
+        "percentage": 5.48,
         "rank": 7,
         "trend": "stable"
       },
       {
         "name": "Assassin",
-        "percentage": 5.43,
+        "percentage": 5.42,
         "rank": 8,
         "trend": "stable"
       },
       {
         "name": "Hierophant",
-        "percentage": 4.18,
+        "percentage": 4.16,
         "rank": 9,
         "trend": "stable"
       },
@@ -80,31 +80,31 @@
       },
       {
         "name": "Righteous Fire",
-        "percentage": 4.67,
+        "percentage": 4.66,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Animate Guardian",
-        "percentage": 4.53,
+        "percentage": 4.54,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Raise Spectre",
-        "percentage": 4.01,
+        "percentage": 4,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Ethereal Knives",
-        "percentage": 3.14,
+        "percentage": 3.13,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Flicker Strike",
-        "percentage": 2.52,
+        "percentage": 2.5,
         "type": "Skill",
         "trend": "up"
       },
@@ -116,7 +116,7 @@
       },
       {
         "name": "Cyclone of Tumult",
-        "percentage": 2.05,
+        "percentage": 2.06,
         "type": "Skill",
         "trend": "up"
       },
@@ -139,13 +139,13 @@
     "items": [
       {
         "name": "Magic Flask",
-        "percentage": 97.8,
+        "percentage": 97.81,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Jewel",
-        "percentage": 90.53,
+        "percentage": 90.49,
         "type": "Item",
         "trend": "up"
       },
@@ -157,25 +157,25 @@
       },
       {
         "name": "Rare Boots",
-        "percentage": 71.37,
+        "percentage": 71.36,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Ring",
-        "percentage": 67.77,
+        "percentage": 67.8,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Helmet",
-        "percentage": 45.95,
+        "percentage": 45.97,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Watcher's Eye",
-        "percentage": 45.56,
+        "percentage": 45.53,
         "type": "Item",
         "trend": "up"
       },
@@ -187,13 +187,13 @@
       },
       {
         "name": "The Light of Meaning",
-        "percentage": 39.85,
+        "percentage": 39.77,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Mageblood",
-        "percentage": 33.98,
+        "percentage": 33.96,
         "type": "Item",
         "trend": "up"
       }
