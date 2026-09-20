@@ -1,7 +1,7 @@
 {
   "league": "Allflame",
   "type": "exp",
-  "updatedAt": "2026-09-19T03:36:55.624Z",
+  "updatedAt": "2026-09-20T03:52:40.079Z",
   "sourceUrl": "https://poe.ninja/poe1/builds/allflame",
   "notice": "Data is updated daily at 08:00 CST from poe.ninja's private builds search API and mirrored locally.",
   "ascendancy": {
@@ -9,55 +9,55 @@
     "items": [
       {
         "name": "Luminary",
-        "percentage": 23.01,
+        "percentage": 23.06,
         "rank": 1,
         "trend": "stable"
       },
       {
         "name": "Elementalist",
-        "percentage": 14.36,
+        "percentage": 14.32,
         "rank": 2,
         "trend": "stable"
       },
       {
         "name": "Occultist",
-        "percentage": 9.35,
+        "percentage": 9.34,
         "rank": 3,
         "trend": "stable"
       },
       {
         "name": "Necromancer",
-        "percentage": 7.43,
+        "percentage": 7.42,
         "rank": 4,
         "trend": "stable"
       },
       {
         "name": "Chieftain",
-        "percentage": 6.75,
+        "percentage": 6.74,
         "rank": 5,
         "trend": "stable"
       },
       {
         "name": "Juggernaut",
-        "percentage": 5.57,
+        "percentage": 5.58,
         "rank": 6,
         "trend": "stable"
       },
       {
         "name": "Slayer",
-        "percentage": 5.46,
+        "percentage": 5.48,
         "rank": 7,
         "trend": "stable"
       },
       {
         "name": "Assassin",
-        "percentage": 5.39,
+        "percentage": 5.37,
         "rank": 8,
         "trend": "stable"
       },
       {
         "name": "Hierophant",
-        "percentage": 4.15,
+        "percentage": 4.16,
         "rank": 9,
         "trend": "stable"
       },
@@ -80,25 +80,25 @@
       },
       {
         "name": "Righteous Fire",
-        "percentage": 4.65,
+        "percentage": 4.64,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Animate Guardian",
-        "percentage": 4.55,
+        "percentage": 4.56,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Raise Spectre",
-        "percentage": 4,
+        "percentage": 3.99,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Ethereal Knives",
-        "percentage": 3.11,
+        "percentage": 3.1,
         "type": "Skill",
         "trend": "up"
       },
@@ -122,7 +122,7 @@
       },
       {
         "name": "Kinetic Blast of Clustering",
-        "percentage": 1.9,
+        "percentage": 1.89,
         "type": "Skill",
         "trend": "up"
       },
@@ -145,55 +145,55 @@
       },
       {
         "name": "Rare Jewel",
-        "percentage": 90.46,
+        "percentage": 90.44,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Gloves",
-        "percentage": 85.9,
+        "percentage": 85.91,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Boots",
-        "percentage": 71.42,
+        "percentage": 71.4,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Ring",
-        "percentage": 67.85,
+        "percentage": 67.93,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Helmet",
-        "percentage": 45.89,
+        "percentage": 45.87,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Watcher's Eye",
-        "percentage": 45.47,
+        "percentage": 45.43,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Body Armour",
-        "percentage": 43.23,
+        "percentage": 43.21,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "The Light of Meaning",
-        "percentage": 39.66,
+        "percentage": 39.64,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Mageblood",
-        "percentage": 33.94,
+        "percentage": 33.93,
         "type": "Item",
         "trend": "up"
       }
