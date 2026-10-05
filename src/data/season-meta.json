@@ -1,7 +1,7 @@
 {
   "league": "Allflame",
   "type": "exp",
-  "updatedAt": "2026-10-04T04:46:08.193Z",
+  "updatedAt": "2026-10-05T04:34:27.080Z",
   "sourceUrl": "https://poe.ninja/poe1/builds/allflame",
   "notice": "Data is updated daily at 08:00 CST from poe.ninja's private builds search API and mirrored locally.",
   "ascendancy": {
@@ -9,13 +9,13 @@
     "items": [
       {
         "name": "Luminary",
-        "percentage": 23.55,
+        "percentage": 23.56,
         "rank": 1,
         "trend": "stable"
       },
       {
         "name": "Elementalist",
-        "percentage": 14.15,
+        "percentage": 14.11,
         "rank": 2,
         "trend": "stable"
       },
@@ -33,13 +33,13 @@
       },
       {
         "name": "Chieftain",
-        "percentage": 6.77,
+        "percentage": 6.76,
         "rank": 5,
         "trend": "stable"
       },
       {
         "name": "Slayer",
-        "percentage": 5.5,
+        "percentage": 5.51,
         "rank": 6,
         "trend": "stable"
       },
@@ -74,60 +74,60 @@
     "items": [
       {
         "name": "Winter Orb",
-        "percentage": 7.4,
+        "percentage": 7.42,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Righteous Fire",
-        "percentage": 4.7,
+        "percentage": 4.69,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Animate Guardian",
-        "percentage": 4.6,
+        "percentage": 4.61,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Raise Spectre",
-        "percentage": 3.98,
+        "percentage": 3.99,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Ethereal Knives",
-        "percentage": 3,
+        "percentage": 2.98,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Flicker Strike",
-        "percentage": 2.46,
+        "percentage": 2.45,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Penance Brand",
-        "percentage": 2.27,
+        "percentage": 2.26,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Cyclone of Tumult",
-        "percentage": 2.05,
-        "type": "Skill",
-        "trend": "up"
-      },
-      {
-        "name": "Kinetic Blast of Clustering",
-        "percentage": 1.86,
+        "percentage": 2.07,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Void Shockwave",
+        "percentage": 1.87,
+        "type": "Skill",
+        "trend": "up"
+      },
+      {
+        "name": "Kinetic Blast of Clustering",
         "percentage": 1.86,
         "type": "Skill",
         "trend": "up"
@@ -139,13 +139,13 @@
     "items": [
       {
         "name": "Magic Flask",
-        "percentage": 97.78,
+        "percentage": 97.79,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Jewel",
-        "percentage": 90.1,
+        "percentage": 90.09,
         "type": "Item",
         "trend": "up"
       },
@@ -163,37 +163,37 @@
       },
       {
         "name": "Rare Ring",
-        "percentage": 68.18,
+        "percentage": 68.21,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Helmet",
-        "percentage": 45.88,
+        "percentage": 45.87,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Watcher's Eye",
-        "percentage": 44.9,
+        "percentage": 44.87,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Body Armour",
-        "percentage": 43.19,
+        "percentage": 43.2,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "The Light of Meaning",
-        "percentage": 39.16,
+        "percentage": 39.11,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Mageblood",
-        "percentage": 33.75,
+        "percentage": 33.73,
         "type": "Item",
         "trend": "up"
       }
