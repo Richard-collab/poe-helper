@@ -1,7 +1,7 @@
 {
   "league": "Allflame",
   "type": "exp",
-  "updatedAt": "2026-10-07T04:49:06.029Z",
+  "updatedAt": "2026-10-08T04:59:15.794Z",
   "sourceUrl": "https://poe.ninja/poe1/builds/allflame",
   "notice": "Data is updated daily at 08:00 CST from poe.ninja's private builds search API and mirrored locally.",
   "ascendancy": {
@@ -9,7 +9,7 @@
     "items": [
       {
         "name": "Luminary",
-        "percentage": 23.62,
+        "percentage": 23.63,
         "rank": 1,
         "trend": "stable"
       },
@@ -21,13 +21,13 @@
       },
       {
         "name": "Occultist",
-        "percentage": 9.12,
+        "percentage": 9.11,
         "rank": 3,
         "trend": "stable"
       },
       {
         "name": "Necromancer",
-        "percentage": 7.39,
+        "percentage": 7.38,
         "rank": 4,
         "trend": "stable"
       },
@@ -39,25 +39,25 @@
       },
       {
         "name": "Slayer",
-        "percentage": 5.51,
+        "percentage": 5.53,
         "rank": 6,
         "trend": "stable"
       },
       {
         "name": "Juggernaut",
-        "percentage": 5.47,
+        "percentage": 5.48,
         "rank": 7,
         "trend": "stable"
       },
       {
         "name": "Assassin",
-        "percentage": 5.23,
+        "percentage": 5.22,
         "rank": 8,
         "trend": "stable"
       },
       {
         "name": "Hierophant",
-        "percentage": 4.12,
+        "percentage": 4.13,
         "rank": 9,
         "trend": "stable"
       },
@@ -74,7 +74,7 @@
     "items": [
       {
         "name": "Winter Orb",
-        "percentage": 7.39,
+        "percentage": 7.38,
         "type": "Skill",
         "trend": "up"
       },
@@ -86,19 +86,19 @@
       },
       {
         "name": "Animate Guardian",
-        "percentage": 4.62,
+        "percentage": 4.63,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Raise Spectre",
-        "percentage": 4,
+        "percentage": 3.99,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Ethereal Knives",
-        "percentage": 2.97,
+        "percentage": 2.96,
         "type": "Skill",
         "trend": "up"
       },
@@ -128,7 +128,7 @@
       },
       {
         "name": "Void Shockwave",
-        "percentage": 1.85,
+        "percentage": 1.86,
         "type": "Skill",
         "trend": "up"
       }
@@ -145,7 +145,7 @@
       },
       {
         "name": "Rare Jewel",
-        "percentage": 90.06,
+        "percentage": 90.03,
         "type": "Item",
         "trend": "up"
       },
@@ -157,43 +157,43 @@
       },
       {
         "name": "Rare Boots",
-        "percentage": 71.65,
+        "percentage": 71.67,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Ring",
-        "percentage": 68.26,
+        "percentage": 68.32,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Helmet",
-        "percentage": 45.87,
+        "percentage": 45.91,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Watcher's Eye",
-        "percentage": 44.84,
+        "percentage": 44.8,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Body Armour",
-        "percentage": 43.22,
+        "percentage": 43.24,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "The Light of Meaning",
-        "percentage": 39.09,
+        "percentage": 39.04,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Shield",
-        "percentage": 33.73,
+        "percentage": 33.74,
         "type": "Item",
         "trend": "up"
       }
