@@ -1,7 +1,7 @@
 {
   "league": "Allflame",
   "type": "exp",
-  "updatedAt": "2026-10-09T05:02:22.787Z",
+  "updatedAt": "2026-10-10T04:48:09.510Z",
   "sourceUrl": "https://poe.ninja/poe1/builds/allflame",
   "notice": "Data is updated daily at 08:00 CST from poe.ninja's private builds search API and mirrored locally.",
   "ascendancy": {
@@ -9,49 +9,49 @@
     "items": [
       {
         "name": "Luminary",
-        "percentage": 23.66,
+        "percentage": 23.68,
         "rank": 1,
         "trend": "stable"
       },
       {
         "name": "Elementalist",
-        "percentage": 14.05,
+        "percentage": 14.04,
         "rank": 2,
         "trend": "stable"
       },
       {
         "name": "Occultist",
-        "percentage": 9.11,
+        "percentage": 9.09,
         "rank": 3,
         "trend": "stable"
       },
       {
         "name": "Necromancer",
-        "percentage": 7.38,
+        "percentage": 7.37,
         "rank": 4,
         "trend": "stable"
       },
       {
         "name": "Chieftain",
-        "percentage": 6.78,
+        "percentage": 6.77,
         "rank": 5,
         "trend": "stable"
       },
       {
         "name": "Slayer",
-        "percentage": 5.53,
+        "percentage": 5.52,
         "rank": 6,
         "trend": "stable"
       },
       {
         "name": "Juggernaut",
-        "percentage": 5.48,
+        "percentage": 5.49,
         "rank": 7,
         "trend": "stable"
       },
       {
         "name": "Assassin",
-        "percentage": 5.21,
+        "percentage": 5.22,
         "rank": 8,
         "trend": "stable"
       },
@@ -80,37 +80,37 @@
       },
       {
         "name": "Righteous Fire",
-        "percentage": 4.71,
+        "percentage": 4.72,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Animate Guardian",
-        "percentage": 4.62,
+        "percentage": 4.63,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Raise Spectre",
-        "percentage": 3.98,
+        "percentage": 3.97,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Ethereal Knives",
-        "percentage": 2.95,
+        "percentage": 2.94,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Flicker Strike",
-        "percentage": 2.45,
+        "percentage": 2.46,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Penance Brand",
-        "percentage": 2.25,
+        "percentage": 2.26,
         "type": "Skill",
         "trend": "up"
       },
@@ -128,7 +128,7 @@
       },
       {
         "name": "Void Shockwave",
-        "percentage": 1.86,
+        "percentage": 1.85,
         "type": "Skill",
         "trend": "up"
       }
@@ -145,25 +145,25 @@
       },
       {
         "name": "Rare Jewel",
-        "percentage": 90.01,
+        "percentage": 90,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Gloves",
-        "percentage": 85.78,
+        "percentage": 85.79,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Boots",
-        "percentage": 71.69,
+        "percentage": 71.71,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Ring",
-        "percentage": 68.34,
+        "percentage": 68.35,
         "type": "Item",
         "trend": "up"
       },
@@ -175,25 +175,25 @@
       },
       {
         "name": "Watcher's Eye",
-        "percentage": 44.75,
+        "percentage": 44.71,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Body Armour",
-        "percentage": 43.22,
+        "percentage": 43.2,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "The Light of Meaning",
-        "percentage": 38.98,
+        "percentage": 38.95,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Shield",
-        "percentage": 33.77,
+        "percentage": 33.8,
         "type": "Item",
         "trend": "up"
       }
