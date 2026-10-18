@@ -1,7 +1,7 @@
 {
   "league": "Allflame",
   "type": "exp",
-  "updatedAt": "2026-10-17T03:23:29.844Z",
+  "updatedAt": "2026-10-18T03:29:13.384Z",
   "sourceUrl": "https://poe.ninja/poe1/builds/allflame",
   "notice": "Data is updated daily at 08:00 CST from poe.ninja's private builds search API and mirrored locally.",
   "ascendancy": {
@@ -9,7 +9,7 @@
     "items": [
       {
         "name": "Luminary",
-        "percentage": 23.9,
+        "percentage": 23.91,
         "rank": 1,
         "trend": "stable"
       },
@@ -21,19 +21,19 @@
       },
       {
         "name": "Occultist",
-        "percentage": 9.03,
+        "percentage": 9,
         "rank": 3,
         "trend": "stable"
       },
       {
         "name": "Necromancer",
-        "percentage": 7.35,
+        "percentage": 7.36,
         "rank": 4,
         "trend": "stable"
       },
       {
         "name": "Chieftain",
-        "percentage": 6.77,
+        "percentage": 6.78,
         "rank": 5,
         "trend": "stable"
       },
@@ -45,19 +45,19 @@
       },
       {
         "name": "Juggernaut",
-        "percentage": 5.49,
+        "percentage": 5.52,
         "rank": 7,
         "trend": "stable"
       },
       {
         "name": "Assassin",
-        "percentage": 5.16,
+        "percentage": 5.14,
         "rank": 8,
         "trend": "stable"
       },
       {
         "name": "Hierophant",
-        "percentage": 4.11,
+        "percentage": 4.1,
         "rank": 9,
         "trend": "stable"
       },
@@ -74,19 +74,19 @@
     "items": [
       {
         "name": "Winter Orb",
-        "percentage": 7.36,
+        "percentage": 7.35,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Righteous Fire",
-        "percentage": 4.72,
+        "percentage": 4.71,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Animate Guardian",
-        "percentage": 4.65,
+        "percentage": 4.67,
         "type": "Skill",
         "trend": "up"
       },
@@ -98,7 +98,7 @@
       },
       {
         "name": "Ethereal Knives",
-        "percentage": 2.89,
+        "percentage": 2.88,
         "type": "Skill",
         "trend": "up"
       },
@@ -110,7 +110,7 @@
       },
       {
         "name": "Penance Brand",
-        "percentage": 2.24,
+        "percentage": 2.25,
         "type": "Skill",
         "trend": "up"
       },
@@ -128,7 +128,7 @@
       },
       {
         "name": "Kinetic Blast of Clustering",
-        "percentage": 1.86,
+        "percentage": 1.85,
         "type": "Skill",
         "trend": "up"
       }
@@ -139,25 +139,25 @@
     "items": [
       {
         "name": "Magic Flask",
-        "percentage": 97.82,
+        "percentage": 97.81,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Jewel",
-        "percentage": 89.91,
+        "percentage": 89.92,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Gloves",
-        "percentage": 85.77,
+        "percentage": 85.78,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Boots",
-        "percentage": 71.73,
+        "percentage": 71.76,
         "type": "Item",
         "trend": "up"
       },
@@ -169,31 +169,31 @@
       },
       {
         "name": "Rare Helmet",
-        "percentage": 45.85,
+        "percentage": 45.88,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Watcher's Eye",
-        "percentage": 44.53,
+        "percentage": 44.47,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Body Armour",
-        "percentage": 43.26,
+        "percentage": 43.25,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "The Light of Meaning",
-        "percentage": 38.82,
+        "percentage": 38.8,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Shield",
-        "percentage": 33.99,
+        "percentage": 33.98,
         "type": "Item",
         "trend": "up"
       }
