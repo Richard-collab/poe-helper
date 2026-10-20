@@ -1,7 +1,7 @@
 {
   "league": "Allflame",
   "type": "exp",
-  "updatedAt": "2026-10-19T03:40:35.793Z",
+  "updatedAt": "2026-10-20T03:51:10.392Z",
   "sourceUrl": "https://poe.ninja/poe1/builds/allflame",
   "notice": "Data is updated daily at 08:00 CST from poe.ninja's private builds search API and mirrored locally.",
   "ascendancy": {
@@ -9,7 +9,7 @@
     "items": [
       {
         "name": "Luminary",
-        "percentage": 23.93,
+        "percentage": 23.95,
         "rank": 1,
         "trend": "stable"
       },
@@ -27,7 +27,7 @@
       },
       {
         "name": "Necromancer",
-        "percentage": 7.37,
+        "percentage": 7.35,
         "rank": 4,
         "trend": "stable"
       },
@@ -39,7 +39,7 @@
       },
       {
         "name": "Slayer",
-        "percentage": 5.55,
+        "percentage": 5.56,
         "rank": 6,
         "trend": "stable"
       },
@@ -51,7 +51,7 @@
       },
       {
         "name": "Assassin",
-        "percentage": 5.14,
+        "percentage": 5.13,
         "rank": 8,
         "trend": "stable"
       },
@@ -80,7 +80,7 @@
       },
       {
         "name": "Righteous Fire",
-        "percentage": 4.73,
+        "percentage": 4.72,
         "type": "Skill",
         "trend": "up"
       },
@@ -92,7 +92,7 @@
       },
       {
         "name": "Raise Spectre",
-        "percentage": 3.95,
+        "percentage": 3.94,
         "type": "Skill",
         "trend": "up"
       },
@@ -122,13 +122,13 @@
       },
       {
         "name": "Void Shockwave",
-        "percentage": 1.87,
+        "percentage": 1.86,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Kinetic Blast of Clustering",
-        "percentage": 1.86,
+        "percentage": 1.85,
         "type": "Skill",
         "trend": "up"
       }
@@ -139,61 +139,61 @@
     "items": [
       {
         "name": "Magic Flask",
-        "percentage": 97.81,
+        "percentage": 97.82,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Jewel",
-        "percentage": 89.9,
+        "percentage": 89.89,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Gloves",
-        "percentage": 85.8,
+        "percentage": 85.79,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Boots",
-        "percentage": 71.81,
+        "percentage": 71.8,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Ring",
-        "percentage": 68.58,
+        "percentage": 68.59,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Helmet",
-        "percentage": 45.88,
+        "percentage": 45.86,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Watcher's Eye",
-        "percentage": 44.48,
+        "percentage": 44.46,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Body Armour",
-        "percentage": 43.23,
+        "percentage": 43.22,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "The Light of Meaning",
-        "percentage": 38.77,
+        "percentage": 38.75,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Shield",
-        "percentage": 34.05,
+        "percentage": 34.08,
         "type": "Item",
         "trend": "up"
       }
