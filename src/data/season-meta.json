@@ -1,7 +1,7 @@
 {
   "league": "Allflame",
   "type": "exp",
-  "updatedAt": "2026-10-20T03:51:10.392Z",
+  "updatedAt": "2026-10-21T03:42:09.607Z",
   "sourceUrl": "https://poe.ninja/poe1/builds/allflame",
   "notice": "Data is updated daily at 08:00 CST from poe.ninja's private builds search API and mirrored locally.",
   "ascendancy": {
@@ -9,13 +9,13 @@
     "items": [
       {
         "name": "Luminary",
-        "percentage": 23.95,
+        "percentage": 23.97,
         "rank": 1,
         "trend": "stable"
       },
       {
         "name": "Elementalist",
-        "percentage": 13.99,
+        "percentage": 14,
         "rank": 2,
         "trend": "stable"
       },
@@ -27,13 +27,13 @@
       },
       {
         "name": "Necromancer",
-        "percentage": 7.35,
+        "percentage": 7.34,
         "rank": 4,
         "trend": "stable"
       },
       {
         "name": "Chieftain",
-        "percentage": 6.79,
+        "percentage": 6.78,
         "rank": 5,
         "trend": "stable"
       },
@@ -51,13 +51,13 @@
       },
       {
         "name": "Assassin",
-        "percentage": 5.13,
+        "percentage": 5.12,
         "rank": 8,
         "trend": "stable"
       },
       {
         "name": "Hierophant",
-        "percentage": 4.1,
+        "percentage": 4.08,
         "rank": 9,
         "trend": "stable"
       },
@@ -86,13 +86,13 @@
       },
       {
         "name": "Animate Guardian",
-        "percentage": 4.68,
+        "percentage": 4.69,
         "type": "Skill",
         "trend": "up"
       },
       {
         "name": "Raise Spectre",
-        "percentage": 3.94,
+        "percentage": 3.95,
         "type": "Skill",
         "trend": "up"
       },
@@ -110,7 +110,7 @@
       },
       {
         "name": "Penance Brand",
-        "percentage": 2.25,
+        "percentage": 2.24,
         "type": "Skill",
         "trend": "up"
       },
@@ -139,55 +139,55 @@
     "items": [
       {
         "name": "Magic Flask",
-        "percentage": 97.82,
+        "percentage": 97.81,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Jewel",
-        "percentage": 89.89,
+        "percentage": 89.9,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Gloves",
-        "percentage": 85.79,
+        "percentage": 85.8,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Boots",
-        "percentage": 71.8,
+        "percentage": 71.84,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Ring",
-        "percentage": 68.59,
+        "percentage": 68.61,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Helmet",
-        "percentage": 45.86,
+        "percentage": 45.83,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Watcher's Eye",
-        "percentage": 44.46,
+        "percentage": 44.45,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "Rare Body Armour",
-        "percentage": 43.22,
+        "percentage": 43.24,
         "type": "Item",
         "trend": "up"
       },
       {
         "name": "The Light of Meaning",
-        "percentage": 38.75,
+        "percentage": 38.73,
         "type": "Item",
         "trend": "up"
       },
