@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
@@ -124,6 +125,7 @@ export function App() {
       <Footer />
       <RecommendedBuilds isOpen={showBuilds} onClose={() => setShowBuilds(false)} />
       <SeasonMeta isOpen={showMeta} onClose={() => setShowMeta(false)} />
+      <Analytics />
       <SpeedInsights />
     </>
   );
